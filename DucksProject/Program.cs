@@ -1,6 +1,6 @@
 ﻿namespace DucksProject
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
@@ -13,22 +13,6 @@
             DuckCall d2 = new DuckCall();
             d2.Quack();
             
-        }
-
-        //Device that makes duck sounds
-        public class DuckCall :IQuackable
-        {
-            private IQuackable _quackingMethod;
-
-            public DuckCall()
-            {
-                _quackingMethod = new QuackingLoud();
-            }
-
-            public void Quack()
-            {
-                _quackingMethod.Quack();
-            }
         }
     }
 }
