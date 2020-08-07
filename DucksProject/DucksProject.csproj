@@ -43,27 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Duck.cs" />
-    <Compile Include="DuckCall.cs" />
-    <Compile Include="FlyingWithWings.cs" />
-    <Compile Include="FlyNoWay.cs" />
-    <Compile Include="FyingWithSingleWing.cs" />
-    <Compile Include="GoldeneyeDuck.cs" />
-    <Compile Include="IFlyable.cs" />
-    <Compile Include="IQuackable.cs" />
-    <Compile Include="MerganserDuck.cs" />
-    <Compile Include="PerchingDuck.cs" />
+    <Compile Include="Domain\Duck.cs" />
+    <Compile Include="Domain\DuckCall.cs" />
+    <Compile Include="Domain\FlyingWithWings.cs" />
+    <Compile Include="Domain\FlyNoWay.cs" />
+    <Compile Include="Domain\FyingWithSingleWing.cs" />
+    <Compile Include="Domain\GoldeneyeDuck.cs" />
+    <Compile Include="Domain\IFlyable.cs" />
+    <Compile Include="Domain\IQuackable.cs" />
+    <Compile Include="Domain\MerganserDuck.cs" />
+    <Compile Include="Domain\PerchingDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuackingFast.cs" />
-    <Compile Include="QuackingLoud.cs" />
-    <Compile Include="RubberDuck.cs" />
-    <Compile Include="ScoterDuck.cs" />
-    <Compile Include="SilentQuack.cs" />
+    <Compile Include="Domain\QuackingFast.cs" />
+    <Compile Include="Domain\QuackingLoud.cs" />
+    <Compile Include="Domain\RubberDuck.cs" />
+    <Compile Include="Domain\ScoterDuck.cs" />
+    <Compile Include="Domain\SilentQuack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastracture\" />
+    <Folder Include="Presentation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

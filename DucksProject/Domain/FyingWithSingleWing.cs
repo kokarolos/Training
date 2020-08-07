@@ -1,6 +1,4 @@
 ﻿using System;
-
-
 namespace DucksProject
 {
     public class FyingWithSingleWing : IFlyable
@@ -8,7 +6,6 @@ namespace DucksProject
         public void Fly()
         {
             Console.WriteLine(GetType().Name);
-
         }
     }
 }

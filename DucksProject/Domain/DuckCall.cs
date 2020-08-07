@@ -7,7 +7,7 @@
 
         public DuckCall()
         {
-            _quackingMethod = new QuackingLoud();
+            _quackingMethod = new QuackingLoud(); //Tight Coupling : Because we know that DuckCall Quacking wont change (?)
         }
 
         public void Quack()
