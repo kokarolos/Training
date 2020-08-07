@@ -10,16 +10,25 @@
             d1.Quack();
             d1.Fly();
 
-            Duck d2 = new DuckCall();
-            d2.SetQuackingMethod(new QuackingLoud());
-            d2.SetFlyingMethod(new FlyNoWay());
+            DuckCall d2 = new DuckCall();
             d2.Quack();
-            d2.Fly();
+            
         }
 
-        public class DuckCall : Duck
+        //Device that makes duck sounds
+        public class DuckCall :IQuackable
         {
-            public override float Weigth => 2.5f;
+            private IQuackable _quackingMethod;
+
+            public DuckCall()
+            {
+                _quackingMethod = new QuackingLoud();
+            }
+
+            public void Quack()
+            {
+                _quackingMethod.Quack();
+            }
         }
     }
 }
