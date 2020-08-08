@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,55 +10,22 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Duck mallard = new MalardDuck(new FlyWithWings() ,new Squeack());
+            Duck mallard = new MalardDuck(new FlyNoWay(), new MuteQuack());
+            Duck rubberDuck = new RubberDuck(new FlyNoWay(), new MuteQuack());
 
 
-            mallard.PerformQuack();
-            mallard.SetFlyingMethod(new FlyNoWay());
-            mallard.PerformFly();
+
+
+            // Legit???
+            Duck redhead = new RedHeadDuck(FlyBehaviorFactory.CreateFlyBehavior(FlyOptions.FlyNoWay),
+                                           QuackBehaviorFactory.CreateQuackBehavior(QuackOptions.MuteQuack));
+                                
+
+
+            redhead.PerformFly();
+
         }
-    }
 
-
-    class FlyWithWings : IFlyable
-    {
-        public void Fly()
-        {
-            Console.WriteLine("Duck Flying");
-        }
-    }
-
-    class FlyNoWay : IFlyable
-    {
-        public void Fly()
-        {
-            Console.WriteLine("Duck CANNOT Fly");
-        }
-    }
-
-    class Quack : IQuackable
-    {
-        public void Quackk()
-        {
-            Console.WriteLine("Duck THAT QUACK ");
-        }
-    }
-
-
-    class Squeack : IQuackable
-    {
-        public void Quackk()
-        {
-            Console.WriteLine("Duck THAT SQUEAK ");
-        }
-    }
-
-    class MuteQuack : IQuackable
-    {
-        public void Quackk()
-        {
-            Console.WriteLine("NO SOUND ");
-        }
     }
 
 

@@ -1,13 +1,14 @@
 ﻿using System;
+
 namespace DesignPatterns
 {
-    class RubberDuck : Duck,IQuackable
+    class Quack : IQuackable
     {
-
         public void Quackk()
         {
-            Console.WriteLine("I can quack");
+            Console.WriteLine("Duck Quacks");
         }
     }
+
 
 }

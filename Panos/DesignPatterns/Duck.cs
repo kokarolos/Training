@@ -4,7 +4,7 @@ namespace DesignPatterns
 {
     public abstract class Duck
     {
-        protected IFlyable flyable;
+        protected IFlyable flyable; 
         protected IQuackable quackable;
 
         public Duck()
@@ -28,19 +28,23 @@ namespace DesignPatterns
             Console.WriteLine(this.GetType().Name);
         }
 
+
         public void Swim()
         {
             Console.WriteLine("I can Swim");
         }
+
+
         public void SetFlyingMethod(IFlyable flyingMethod)
         {
             flyable = flyingMethod;
         }
+
         public void SetFlyingMethod(IQuackable quiackingMethod)
         {
             quackable = quiackingMethod;
         }
-
+        
 
     }
 

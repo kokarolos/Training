@@ -43,18 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DecoyDuck.cs" />
+    <Compile Include="Factories\FlyBehaviorFactory.cs" />
+    <Compile Include="Concrete\DecoyDuck.cs" />
     <Compile Include="Duck.cs" />
+    <Compile Include="DuckBehavior\FlyNoWay.cs" />
+    <Compile Include="Duck Behavior Enums\FlyOptions.cs" />
+    <Compile Include="DuckBehavior\FlyWithWings.cs" />
     <Compile Include="Interfaces\IFlyable.cs" />
-    <Compile Include="MalardDuck.cs" />
+    <Compile Include="Concrete\MalardDuck.cs" />
+    <Compile Include="DuckBehavior\MuteQuack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\IQuackable.cs" />
-    <Compile Include="RedHeadDuck.cs" />
-    <Compile Include="RubberDuck.cs" />
+    <Compile Include="DuckBehavior\Quack.cs" />
+    <Compile Include="Factories\QuackBehaviorFactory.cs" />
+    <Compile Include="Duck Behavior Enums\QuackOptions.cs" />
+    <Compile Include="Concrete\RedHeadDuck.cs" />
+    <Compile Include="Concrete\RubberDuck.cs" />
+    <Compile Include="DuckBehavior\Squeack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
