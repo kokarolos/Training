@@ -9,7 +9,7 @@ namespace BankProject
         public string CardHolder { get; set; }
         public string Number { get; set; }
         public DateTime DueTo { get; set; }
-        public decimal Funds { get; set; }
+        public decimal Funds { get; protected set; }
 
         /// <summary>
         /// Decreasing user's Funds
