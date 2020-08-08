@@ -6,6 +6,6 @@
         {
         }
 
-        public override float Weigth { get => 0.1f; }
+        public override float Weight { get => 0.1f; }
     }
 }

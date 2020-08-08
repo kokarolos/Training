@@ -20,7 +20,7 @@ namespace BankProject
         {
             if (amount > Funds)
             {
-                Console.WriteLine("Unsafitient Funds Please refill");
+                Console.WriteLine("Insufficient Funds Please refill");
             }
             else
             {
