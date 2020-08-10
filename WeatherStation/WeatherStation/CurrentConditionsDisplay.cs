@@ -1,4 +1,6 @@
-﻿namespace WeatherStation
+﻿using System;
+
+namespace WeatherStation
 {
     public class CurrentConditionsDisplay : IObservable, IDisplayable
     {
@@ -21,7 +23,7 @@
 
         public void Display()
         {
-            System.Console.WriteLine($"Current Conditions : temp: {_temperature}" +
+            Console.WriteLine($"Current Conditions : temp: {_temperature}" +
                 $" humidity: {_humidity} ");
         }
     }

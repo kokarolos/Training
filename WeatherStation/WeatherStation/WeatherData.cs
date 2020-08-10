@@ -3,29 +3,17 @@ using System.Collections.Generic;
 
 namespace WeatherStation
 {
-    public class WeatherStation : ISubject
+    public class WeatherData : ISubject
     {
         private List<IObservable> _observables;
         private float _temperature;
         private float _humidity;
         private float _pressure;
 
-        public WeatherStation()
+        public WeatherData()
         {
             _observables = new List<IObservable>();
         }
-
-        public void SetMeasurements(float temperature)
-        {
-            _temperature = temperature;
-        }
-
-        public void SetMeasurements(float temperature, float humidity)
-        {
-            _temperature = temperature;
-            _humidity = humidity;
-        }
-
         public void SetMeasurements(float temperature,float humidity,float pressure)
         {
             _temperature = temperature;
@@ -33,11 +21,9 @@ namespace WeatherStation
             _pressure = pressure;
             Notify();
         }
-
-
         public void Notify()
         {
-            _observables.ForEach(x => x.Update(42.2f,25.1f,11.2f));
+            _observables.ForEach(x => x.Update(_temperature,_humidity,_pressure));
         }
 
         public void Register(IObservable observerable)
