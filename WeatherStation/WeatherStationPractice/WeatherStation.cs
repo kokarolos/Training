@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace WeatherStationPractice
 {
     public class WeatherStation :ISubject
