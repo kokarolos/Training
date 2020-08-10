@@ -38,7 +38,7 @@ namespace WeatherStation
         {
             Console.WriteLine($"Today's HeatIndex is {GetHeatIndex()}");
         }
-
+        
         private double GetHeatIndex()
         {
             var heat = c1 + c2 * _temperature + c3 * _humidity + c4 * _temperature * _humidity + c5 * Math.Pow(_temperature, 2)
