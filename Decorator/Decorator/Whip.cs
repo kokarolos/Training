@@ -1,4 +1,5 @@
-﻿using Decorator;
+﻿using System;
+using Decorator;
 
 public class Whip : CondimentDecorator
 {
@@ -7,6 +8,7 @@ public class Whip : CondimentDecorator
     public Whip(Beverage beverage)
     {
         _beverage = beverage;
+        Console.WriteLine($"{GetDescription()} added");
     }
 
     public override decimal Cost()
