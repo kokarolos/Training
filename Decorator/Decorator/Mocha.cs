@@ -2,7 +2,7 @@
 
 namespace Decorator
 {
-    public class Mocha : CondimentDecorator
+    public class Mocha : BeverageDecorator
     {
         private Beverage _beverage;
 

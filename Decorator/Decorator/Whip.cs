@@ -1,7 +1,7 @@
 ﻿using System;
 using Decorator;
 
-public class Whip : CondimentDecorator
+public class Whip : BeverageDecorator
 {
     private Beverage _beverage;
 

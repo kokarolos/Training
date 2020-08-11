@@ -1,7 +1,7 @@
 ﻿using Decorator;
 using System;
 
-public class Milk : CondimentDecorator
+public class Milk : BeverageDecorator
 {
     private Beverage _beverage;
 

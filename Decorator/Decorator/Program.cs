@@ -10,7 +10,10 @@ namespace Decorator
             beverage = new Milk(beverage);
             beverage = new Whip(beverage);
             beverage = new Whip(beverage);
-            var m = new Milk(beverage);
+            beverage = new Whip(beverage);
+            beverage = new Whip(beverage);
+            beverage = new Whip(beverage);
+            beverage = new Soy(beverage);
             Console.WriteLine($"{beverage.Cost()}");
         }
     }
