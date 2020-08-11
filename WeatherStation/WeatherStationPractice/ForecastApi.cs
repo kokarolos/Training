@@ -7,10 +7,9 @@
         private float _humidity;
         private float _pressure;
 
-        public ForecastApi(IDisplayable displayble)
+        public ForecastApi(IDisplayable displayable)
         {
-            _displayMethod = displayble;
-
+            _displayMethod = displayable;
         }
 
         public void Update(float temperature, float humidity, float pressure)

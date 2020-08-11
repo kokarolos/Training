@@ -8,13 +8,11 @@ namespace WeatherStationPractice
         //Singleton Pattern
         //instance of WeatherStation
         private static WeatherStation _instance;
-
         private List<IObservable> _observables;
+        private static object _syncLock = new object();
         private float _temperature;
         private float _humidity;
         private float _pressure;
-
-        private static object _syncLock = new object();
 
         public static WeatherStation GetWeatherStation()
         {
@@ -58,5 +56,6 @@ namespace WeatherStationPractice
         {
             _observables.Remove(observerable);
         }
+       
     }
 }

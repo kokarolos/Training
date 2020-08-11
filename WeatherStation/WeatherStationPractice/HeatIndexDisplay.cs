@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace WeatherStationPractice
 {
     public class HeatIndexDisplay : IDisplayable
