@@ -8,11 +8,16 @@ public class Milk : BeverageDecorator
     public Milk(Beverage beverage)
     {
         _beverage = beverage;
-        Console.WriteLine($"{GetDescription()} added");
+        _description = "Milk, ";
     }
 
     public override decimal Cost()
     {
         return _beverage.Cost() + 0.15M;
+    }
+
+    public override string GetDescription()
+    {
+        return _beverage.GetDescription() + _description;
     }
 }

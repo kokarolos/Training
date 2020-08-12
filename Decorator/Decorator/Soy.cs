@@ -1,5 +1,4 @@
-﻿using System;
-using Decorator;
+﻿using Decorator;
 
 public class Soy : BeverageDecorator
 {
@@ -8,11 +7,15 @@ public class Soy : BeverageDecorator
     public Soy(Beverage beverage)
     {
         _beverage = beverage;
-        Console.WriteLine($"{GetDescription()} added");
+        _description = "Soy, ";
     }
 
     public override decimal Cost()
     {
         return _beverage.Cost() + 0.55M;
+    }
+    public override string GetDescription()
+    {
+        return _beverage.GetDescription() + _description;
     }
 }

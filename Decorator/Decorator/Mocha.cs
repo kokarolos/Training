@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Decorator
+﻿namespace Decorator
 {
     public class Mocha : BeverageDecorator
     {
@@ -9,12 +7,15 @@ namespace Decorator
         public Mocha(Beverage beverage)
         {
             _beverage = beverage;
-            Console.WriteLine($"{GetDescription()} added");
+            _description = "Mocha ";
         }
-
         public override decimal Cost()
         {
             return _beverage.Cost() + 0.22M;
+        }
+        public override string GetDescription()
+        {
+            return _beverage.GetDescription() + _description;
         }
     }
 }

@@ -2,8 +2,8 @@
 {
     public abstract class Beverage
     {
-        protected string _description => GetType().Name;
-        public string GetDescription() => _description;
+        protected string _description;
+        public abstract string GetDescription();
 
         public abstract decimal Cost();
     }

@@ -6,15 +6,15 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            Beverage beverage = new Espresso();
+            Beverage beverage = new HouseBlend();
             beverage = new Milk(beverage);
             beverage = new Whip(beverage);
             beverage = new Whip(beverage);
             beverage = new Whip(beverage);
             beverage = new Whip(beverage);
-            beverage = new Whip(beverage);
+            beverage = new Mocha(beverage);
             beverage = new Soy(beverage);
-            Console.WriteLine($"{beverage.Cost()}");
+            Console.WriteLine($"{beverage.GetDescription()} {beverage.Cost()}");
         }
     }
 }

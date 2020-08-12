@@ -7,6 +7,11 @@ namespace Decorator
         {
             return 2.79M;
         }
+
+        public override string GetDescription()
+        {
+            return "Decaf, ";
+        }
     }
 }
 

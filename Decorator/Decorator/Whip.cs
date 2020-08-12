@@ -8,11 +8,15 @@ public class Whip : BeverageDecorator
     public Whip(Beverage beverage)
     {
         _beverage = beverage;
-        Console.WriteLine($"{GetDescription()} added");
+        _description = "Whip ";
     }
 
     public override decimal Cost()
     {
         return _beverage.Cost() + 1.25M;
+    }
+    public override string GetDescription()
+    {
+        return _beverage.GetDescription() + _description;
     }
 }

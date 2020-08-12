@@ -6,4 +6,9 @@ public class Espresso : Beverage
     {
         return 5.25M;
     }
+
+    public override string GetDescription()
+    {
+        return "Esspresso, ";
+    }
 }
