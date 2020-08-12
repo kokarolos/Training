@@ -1,7 +1,0 @@
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Factory\bin\Debug\Factory.exe.config
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Factory\bin\Debug\Factory.exe
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Factory\bin\Debug\Factory.pdb
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Factory\obj\Debug\Factory.exe
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Factory\obj\Debug\Factory.pdb
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Factory\obj\Debug\Factory.csprojAssemblyReference.cache

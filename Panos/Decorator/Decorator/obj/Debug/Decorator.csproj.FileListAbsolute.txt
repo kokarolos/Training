@@ -1,0 +1,2 @@
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Panos\Decorator\Decorator\obj\Debug\Decorator.csprojAssemblyReference.cache
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\Panos\Decorator\Decorator\obj\Debug\Decorator.csproj.CoreCompileInputs.cache
