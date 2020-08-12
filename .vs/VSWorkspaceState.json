@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Factory"
+    "\\BankProject",
+    "\\Factory",
+    "\\Factory\\bin\\Debug",
+    "\\Factory\\bin\\Release"
   ],
-  "SelectedNode": "\\Factory\\Program.cs",
+  "SelectedNode": "\\BankProject\\BankProject.sln",
   "PreviewInSolutionExplorer": false
 }
