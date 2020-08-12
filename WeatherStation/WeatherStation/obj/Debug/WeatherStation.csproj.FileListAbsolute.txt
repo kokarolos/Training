@@ -1,0 +1,13 @@
+C:\Users\Karolos\source\repos\WeatherStation\WeatherStation\bin\Debug\WeatherStation.exe.config
+C:\Users\Karolos\source\repos\WeatherStation\WeatherStation\bin\Debug\WeatherStation.exe
+C:\Users\Karolos\source\repos\WeatherStation\WeatherStation\bin\Debug\WeatherStation.pdb
+C:\Users\Karolos\source\repos\WeatherStation\WeatherStation\obj\Debug\WeatherStation.csproj.CoreCompileInputs.cache
+C:\Users\Karolos\source\repos\WeatherStation\WeatherStation\obj\Debug\WeatherStation.exe
+C:\Users\Karolos\source\repos\WeatherStation\WeatherStation\obj\Debug\WeatherStation.pdb
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStation\bin\Debug\WeatherStation.exe.config
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStation\bin\Debug\WeatherStation.exe
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStation\bin\Debug\WeatherStation.pdb
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStation\obj\Debug\WeatherStation.csprojAssemblyReference.cache
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStation\obj\Debug\WeatherStation.csproj.CoreCompileInputs.cache
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStation\obj\Debug\WeatherStation.exe
+C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStation\obj\Debug\WeatherStation.pdb

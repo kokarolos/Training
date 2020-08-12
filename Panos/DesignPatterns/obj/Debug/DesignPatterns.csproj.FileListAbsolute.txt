@@ -1,0 +1,14 @@
+C:\Users\p.rizos.PROSVASISHQ\source\repos\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csprojAssemblyReference.cache
+C:\Users\p.rizos.PROSVASISHQ\source\repos\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\p.rizos.PROSVASISHQ\source\repos\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+C:\Users\p.rizos.PROSVASISHQ\source\repos\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe
+C:\Users\p.rizos.PROSVASISHQ\source\repos\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.pdb
+C:\Users\p.rizos.PROSVASISHQ\source\repos\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.exe
+C:\Users\p.rizos.PROSVASISHQ\source\repos\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.pdb
+C:\Users\Παναγιώτης\Desktop\Training\Training\Panos\DesignPatterns\obj\Debug\DesignPatterns.csprojAssemblyReference.cache
+C:\Users\Παναγιώτης\Desktop\Training\Training\Panos\DesignPatterns\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\Παναγιώτης\Desktop\Training\Training\Panos\DesignPatterns\obj\Debug\DesignPatterns.exe
+C:\Users\Παναγιώτης\Desktop\Training\Training\Panos\DesignPatterns\obj\Debug\DesignPatterns.pdb
+C:\Users\Παναγιώτης\Desktop\Training\Training\Panos\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+C:\Users\Παναγιώτης\Desktop\Training\Training\Panos\DesignPatterns\bin\Debug\DesignPatterns.exe
+C:\Users\Παναγιώτης\Desktop\Training\Training\Panos\DesignPatterns\bin\Debug\DesignPatterns.pdb
