@@ -10,9 +10,7 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            Beverage beverage2 = new HouseBlend();
-            Console.WriteLine(beverage2.GetDescription() + " " + beverage2.Cost());
-
+            Beverage beverage2 = new Espresso();
             beverage2 = new Mocka(beverage2);
 
             Console.WriteLine(beverage2.GetDescription() + " " + beverage2.Cost()); 

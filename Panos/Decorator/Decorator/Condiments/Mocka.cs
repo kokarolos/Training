@@ -15,7 +15,7 @@
 
         public override string GetDescription()
         {
-            return Beverage.GetDescription() +" "+ "Mocka" ;
+            return Beverage.GetDescription() + "Mocka" ;
 
         }
         public override decimal Cost()  // Compute the cost of the Beverage with our decorator
