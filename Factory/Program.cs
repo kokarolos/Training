@@ -6,10 +6,10 @@
         {
             PizzaStore nyStore = new NYPizzaStore();
             PizzaStore chicagoStore = new ChicagoPizzaStore();
-            nyStore.OrderPizza(typeof(NyStyleClamPizza));
-            chicagoStore.OrderPizza(typeof(NyStyleVeggiePizza));
-            chicagoStore.OrderPizza(typeof(NyStylePepperoniPizza));
-            chicagoStore.OrderPizza(typeof(NyStylePepperoniPizza));
+            nyStore.OrderPizza("Cheese");
+            chicagoStore.OrderPizza("Veggie");
+            chicagoStore.OrderPizza("Clam");
+            chicagoStore.OrderPizza("Veggie");
         }
     }
 }
