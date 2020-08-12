@@ -1,4 +1,6 @@
-﻿namespace Factory1
+﻿
+
+namespace Factory1
 {
     class CHICheesePizza : Pizza
     {
@@ -9,6 +11,5 @@
 
             Toppings.Add(Factory1.Toppings.Cheese);
         }
-
     }
 }

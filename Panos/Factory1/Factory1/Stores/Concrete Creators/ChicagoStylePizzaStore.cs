@@ -1,18 +1,24 @@
-﻿namespace Factory1
+﻿using System.CodeDom;
+
+namespace Factory1
 {
     public class ChicagoStylePizzaStore : PizzaStore
     {
-        protected override Pizza CreatePizza(string type)
+        protected override Pizza CreatePizza(PizzaType type)
         {
-            Pizza pizza = null;
+            switch (type) 
+            {
+                case PizzaType.Cheese:
+                    return new CHICheesePizza();
+                case PizzaType.Clam:
+                    return new CHIClamPizza();
+                case PizzaType.Peperoni:
+                    return new CHIPepperoniPizza();
+                case PizzaType.Veggie:
+                    return new CHIVeggiePizza();
+            }
 
-            if (type.Equals("Cheese")) { pizza = new CHICheesePizza(); }
-            else if (type.Equals("Peperoni")) { pizza = new CHIPepperoniPizza(); }
-            else if (type.Equals("Clam")) { pizza = new CHIClamPizza(); }
-            else if (type.Equals("Veggie")) { pizza = new CHIVeggiePizza(); }
-            return pizza;
+            throw new System.InvalidOperationException();
         }
     }
-
-
 }

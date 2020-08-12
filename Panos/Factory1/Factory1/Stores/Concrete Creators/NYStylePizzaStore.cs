@@ -2,15 +2,22 @@
 {
     public class NYStylePizzaStore : PizzaStore
     {
-        protected override Pizza CreatePizza(string type)
+        protected override Pizza CreatePizza(PizzaType type)
         {
-            Pizza pizza = null;
+            switch (type)
+            {
+                case PizzaType.Cheese:
+                    return new NYCheesePizza();
+                case PizzaType.Clam:
+                    return new NYClamPizza();
+                case PizzaType.Peperoni:
+                    return new NYPepperoniPizza();
+                case PizzaType.Veggie:
+                    return new NYVeggiePizza();
+            }
 
-            if (type.Equals("Cheese")) { pizza = new NYCheesePizza(); }
-            else if (type.Equals("Peperoni")) { pizza = new NYPepperoniPizza(); }
-            else if (type.Equals("Clam")) { pizza = new NYClamPizza(); }
-            else if (type.Equals("Veggie")) { pizza = new NYVeggiePizza(); }
-            return pizza;
+            throw new System.InvalidOperationException();
+
         }
     }
 
