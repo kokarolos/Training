@@ -51,6 +51,8 @@
     <Compile Include="Pizzas\Concrete Products\NY\NYClamPizza.cs" />
     <Compile Include="Pizzas\Concrete Products\NY\NYPepperoniPizza.cs" />
     <Compile Include="Pizzas\Concrete Products\NY\NYVeggiePizza.cs" />
+
+    <Compile Include="Pizzas\PizzaType.cs" />
     <Compile Include="Stores\Concrete Creators\ChicagoStylePizzaStore.cs" />
     <Compile Include="Stores\Concrete Creators\NYStylePizzaStore.cs" />
     <Compile Include="Pizzas\Toppings.cs" />

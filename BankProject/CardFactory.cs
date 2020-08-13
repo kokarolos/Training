@@ -6,8 +6,7 @@ namespace BankProject
     {
         public static ICard Create(Type CardType)
         {
-            ICard card = Activator.CreateInstance(CardType) as ICard;
-            return card;
+            return Activator.CreateInstance(CardType) as ICard;
         }
     }
 }

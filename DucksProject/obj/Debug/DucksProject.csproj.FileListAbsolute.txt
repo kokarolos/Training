@@ -1,7 +1,0 @@
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\DucksProject\bin\Debug\DucksProject.exe.config
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\DucksProject\bin\Debug\DucksProject.exe
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\DucksProject\bin\Debug\DucksProject.pdb
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\DucksProject\obj\Debug\DucksProject.csprojAssemblyReference.cache
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\DucksProject\obj\Debug\DucksProject.csproj.CoreCompileInputs.cache
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\DucksProject\obj\Debug\DucksProject.exe
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\DucksProject\obj\Debug\DucksProject.pdb

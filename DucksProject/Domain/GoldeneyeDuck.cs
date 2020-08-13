@@ -2,6 +2,11 @@
 {
     public class GoldeneyeDuck : Duck
     {
-        public override float Weigth { get => 1.2f; }
+        public GoldeneyeDuck(IFlyable flyingMethod, IQuackable quackingMethod) : base(flyingMethod, quackingMethod)
+        {
+
+        }
+
+        public override float Weight { get => 1.2f; }
     }
 }

@@ -2,7 +2,7 @@
 {
     public abstract class PizzaStore 
     {
-        public Pizza OrderPizza(string type)
+        public Pizza OrderPizza(PizzaType type)
         {
             Pizza pizza;
             pizza = this.CreatePizza(type);
@@ -12,8 +12,6 @@
             pizza.Box();
             return pizza;
         }
-        protected abstract Pizza CreatePizza(string type);
+        protected abstract Pizza CreatePizza(PizzaType type);
     }
-
-
 }

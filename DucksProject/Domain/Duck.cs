@@ -2,18 +2,17 @@
 {
     public abstract class Duck
     {
-        public abstract float Weigth { get; }
-        public IQuackable _quackingMethod;
-        public IFlyable _flyingMethod;
+        public abstract float Weight { get; }
+        private IQuackable _quackingMethod;
+        private IFlyable _flyingMethod;
 
-        public void SetQuackingMethod(IQuackable quackingMethod)
+        public Duck(IFlyable flyingMethod, IQuackable quackingMethod)
         {
             _quackingMethod = quackingMethod;
-        }
-        public void SetFlyingMethod(IFlyable flyingMethod)
-        {
             _flyingMethod = flyingMethod;
+
         }
+
         public void Quack()
         {
             _quackingMethod.Quack();

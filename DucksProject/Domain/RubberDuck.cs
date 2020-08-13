@@ -2,6 +2,10 @@
 {
     public class RubberDuck : Duck
     {
-        public override float Weigth { get => 1.0f; }
+        public RubberDuck(IFlyable flyingMethod, IQuackable quackingMethod) : base(flyingMethod, quackingMethod)
+        {
+        }
+
+        public override float Weight { get => 1.0f; }
     }
 }
