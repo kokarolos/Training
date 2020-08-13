@@ -3,6 +3,7 @@
     public class Soy : CondimentDecorator
     {
         Beverage Beverage; // Instance var to hold the Beverage wrapping
+        
 
         public Soy(Beverage beverage)
         {

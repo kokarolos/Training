@@ -10,6 +10,8 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
+
+            Beverage beverage2 = new Espresso();
             Beverage beverage2 = new HouseBlend();
             Console.WriteLine(beverage2.GetDescription() + " " + beverage2.Cost());
             Beverage beverage3 = new Espresso();

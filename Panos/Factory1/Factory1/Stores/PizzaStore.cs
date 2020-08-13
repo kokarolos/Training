@@ -12,9 +12,6 @@
             pizza.Box();
             return pizza;
         }
-
         protected abstract Pizza CreatePizza(PizzaType type);
     }
-
-
 }

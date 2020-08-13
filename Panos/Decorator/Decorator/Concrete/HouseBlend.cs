@@ -4,7 +4,7 @@
     {
         public HouseBlend()
         {
-            Description = GetType().Name; 
+            description = GetType().Name;
         }
         public override decimal Cost()  // Return the price of HouseBlend without any Condiment.
         {

@@ -4,7 +4,7 @@
     {
         public DarkRoast()
         {
-            Description = GetType().Name; 
+            description = "DarkRoast";
         }
         public override decimal Cost()
         {

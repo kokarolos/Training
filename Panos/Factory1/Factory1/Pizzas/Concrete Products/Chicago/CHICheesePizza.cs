@@ -1,5 +1,3 @@
-﻿
-
 namespace Factory1
 {
     class CHICheesePizza : Pizza
