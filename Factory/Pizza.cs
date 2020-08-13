@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Factory
 {
-    public abstract class Pizza
+    public abstract class Pizza 
     {
         public string Name { get; set; }
         public Dough Dough { get; set; }
@@ -11,19 +11,6 @@ namespace Factory
         public List<Vegetable> Veggies { get; set; } = new List<Vegetable>();
         public Cheese Cheese { get; set; }
         public Clam Clam { get; set; }
-
-        private IPizzaIngredientFactory _pizzaIngredientFactory;
-        public Pizza(IPizzaIngredientFactory pizzaIngredientFactory)
-        {
-            _pizzaIngredientFactory = pizzaIngredientFactory;
-        }
-        public void Prepare()
-        {
-            Console.WriteLine($"Prepairing {GetType().Name}");
-            Dough = _pizzaIngredientFactory.CreateDough();
-            Sauce = _pizzaIngredientFactory.CreateSauce();
-            Cheese = _pizzaIngredientFactory.CreateCheese();
-        }
 
         public void Bake()
         {
@@ -37,5 +24,7 @@ namespace Factory
         {
             Console.WriteLine($"Placing {GetType().Name} in official PizzaStore box");
         }
+
+        public abstract void Prepare();
     }
 }

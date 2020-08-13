@@ -21,12 +21,12 @@ namespace Factory
                 p2,
                 p3
             };
+
             foreach (var pizza in pizzas)
             {
                 Console.WriteLine($"{pizza.Name}" +
-                    $" {pizza.Sauce.GetType().Name}" +
+                    $"{pizza.Sauce.GetType().Name}" +
                     $"{pizza.Dough.GetType().Name}" +
-                    $"{pizza.Veggies}" +
                     $"{pizza.Cheese.GetType().Name}");
             }
         }
