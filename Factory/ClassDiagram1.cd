@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Factory.CheesePizza" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>CheesePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.ClamPizza" Collapsed="true">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ClamPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.ChicagoIngredientFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYgAAAAAAAAAAAAAAAAAAAAABCAAQAAAAA=</HashCode>
+      <FileName>Factories\ChicagoIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Factory.ChicagoPizzaStore" Collapsed="true">
+    <Position X="22.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\ChicagoPizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.NYPizzaIngredientFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYgAAAAAAAAAAAAAAAAAAAAABCAAQAAAAA=</HashCode>
+      <FileName>Factories\NYPizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Factory.NYPizzaStore" Collapsed="true">
+    <Position X="20.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\NYPizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.PizzaStore" Collapsed="true">
+    <Position X="21.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Cheese" Collapsed="true">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Cheese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Clam" Collapsed="true">
+    <Position X="13.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Clam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.BlackOlive" Collapsed="true">
+    <Position X="9.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\BlackOlive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Eggplant" Collapsed="true">
+    <Position X="14.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\Eggplant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.FreshClam" Collapsed="true">
+    <Position X="13.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\FreshClam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Garlic" Collapsed="true">
+    <Position X="5.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\Garlic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.MarinaraSauce" Collapsed="true">
+    <Position X="25.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\MarinaraSauce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.MozzarellaCheese" Collapsed="true">
+    <Position X="18" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\MozzarellaCheese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Mushroom" Collapsed="true">
+    <Position X="12" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\Mushroom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Onion" Collapsed="true">
+    <Position X="16.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\Onion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.ParmesanCheese" Collapsed="true">
+    <Position X="15.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\ParmesanCheese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.PlumTomatoSauce" Collapsed="true">
+    <Position X="23.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\PlumTomatoSauce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.RedPepper" Collapsed="true">
+    <Position X="7.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\RedPepper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.ReggianoCheese" Collapsed="true">
+    <Position X="20.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\ReggianoCheese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.SlicedPepperoni" Collapsed="true">
+    <Position X="25.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\SlicedPepperoni.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Spinach" Collapsed="true">
+    <Position X="18.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\Spinach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.ThickCrustDough" Collapsed="true">
+    <Position X="15.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\ThickCrustDough.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.ThinCrustDough" Collapsed="true">
+    <Position X="17.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Concrete\ThinCrustDough.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Dough" Collapsed="true">
+    <Position X="16.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Dough.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Pepperoni" Collapsed="true">
+    <Position X="25.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Pepperoni.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Sauce" Collapsed="true">
+    <Position X="24.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Sauce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Vegetable" Collapsed="true">
+    <Position X="12" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Igredients\Vegetable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.PepperoniPizza" Collapsed="true">
+    <Position X="9.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>PepperoniPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Pizza" Collapsed="true">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAQAAAgAAAAAQQAAIAAAAAAAAAAAABQQA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.Program" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory.VeggiePizza" Collapsed="true">
+    <Position X="14" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>VeggiePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Factory.IPizzaIngredientFactory" Collapsed="true">
+    <Position X="9" Y="1" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYgAAAAAAAAAAAAAAAAAAAAABCAAQAAAAA=</HashCode>
+      <FileName>Factories\IPizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
