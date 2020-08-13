@@ -4,18 +4,19 @@ namespace Factory
 {
     public class NYPizzaStore : PizzaStore
     {
+        private NYPizzaIngredientFactory _nyPizzaIngredientFactory = new NYPizzaIngredientFactory();
         public override Pizza CreatePizza(string type)
         {
             switch (type)
             {
                 case "cheese":
-                    return new NyStyleCheesePizza();
+                    return new CheesePizza(_nyPizzaIngredientFactory);
                 case "clam":  
-                    return new NyStyleClamPizza();
+                    return new ClamPizza(_nyPizzaIngredientFactory);
                 case "veggie": 
-                    return new NyStyleVeggiePizza();
+                    return new VeggiePizza(_nyPizzaIngredientFactory);
                 case "pepperoni":
-                    return new NyStylePepperoniPizza();
+                    return new PepperoniPizza(_nyPizzaIngredientFactory);
             }
             throw new InvalidOperationException();
         }
