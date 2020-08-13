@@ -1,5 +1,7 @@
 ﻿namespace Factory
 {
-    public class Mushroom : Vegetable { }
+    public class Mushroom : IVegetable
+    {
+    }
 
 }

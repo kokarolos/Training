@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public class ParmesanCheese : Cheese
+    public class ParmesanCheese : ICheese
     {
 
     }

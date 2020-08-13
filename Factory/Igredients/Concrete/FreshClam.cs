@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public class FreshClam : Clam
+    public class FreshClam : IClam
     {
 
     }

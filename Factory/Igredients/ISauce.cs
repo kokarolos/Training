@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public abstract class Clam
+    public interface ISauce
     {
 
     }

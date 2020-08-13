@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public class MarinaraSauce : Sauce
+    public class MarinaraSauce : ISauce
     {
 
     }

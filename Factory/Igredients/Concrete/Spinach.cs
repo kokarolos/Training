@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public class Spinach : Vegetable
+    public class Spinach : IVegetable
     {
 
     }

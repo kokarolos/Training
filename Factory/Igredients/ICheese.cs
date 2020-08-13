@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public abstract class Sauce
+    public interface ICheese
     {
 
     }

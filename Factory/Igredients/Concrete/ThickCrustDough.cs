@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public class ThickCrustDough : Dough
+    public class ThickCrustDough : IDough
     {
 
     }

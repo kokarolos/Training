@@ -44,10 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Igredients\Concrete\BlackOlive.cs" />
-    <Compile Include="Igredients\Cheese.cs" />
+    <Compile Include="Igredients\ICheese.cs" />
     <Compile Include="Factories\ChicagoIngredientFactory.cs" />
-    <Compile Include="Igredients\Clam.cs" />
-    <Compile Include="Igredients\Dough.cs" />
+    <Compile Include="Igredients\IClam.cs" />
+    <Compile Include="Igredients\IDough.cs" />
     <Compile Include="Igredients\Concrete\Eggplant.cs" />
     <Compile Include="Factories\ChicagoPizzaStore.cs" />
     <Compile Include="CheesePizza.cs" />
@@ -72,12 +72,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Igredients\Concrete\RedPepper.cs" />
     <Compile Include="Igredients\Concrete\ReggianoCheese.cs" />
-    <Compile Include="Igredients\Sauce.cs" />
+    <Compile Include="Igredients\ISauce.cs" />
     <Compile Include="Igredients\Concrete\SlicedPepperoni.cs" />
     <Compile Include="Igredients\Concrete\Spinach.cs" />
     <Compile Include="Igredients\Concrete\ThickCrustDough.cs" />
     <Compile Include="Igredients\Concrete\ThinCrustDough.cs" />
-    <Compile Include="Igredients\Vegetable.cs" />
+    <Compile Include="Igredients\IVegetable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

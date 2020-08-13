@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public class BlackOlive : Vegetable
+    public class BlackOlive : IVegetable
     {
 
     }

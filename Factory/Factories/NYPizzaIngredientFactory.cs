@@ -4,34 +4,34 @@ namespace Factory
 {
     public class NYPizzaIngredientFactory : IPizzaIngredientFactory
     {
-        public Cheese CreateCheese()
+        public ICheese CreateCheese()
         {
             return new ReggianoCheese();
         }
 
-        public Clam CreateClam()
+        public IClam CreateClam()
         {
             return new FreshClam();
         }
 
-        public Dough CreateDough()
+        public IDough CreateDough()
         {
             return new ThickCrustDough();
         }
 
-        public Pepperoni CreatePepperoni()
+        public IPepperoni CreatePepperoni()
         {
             return new SlicedPepperoni();
         }
 
-        public Sauce CreateSauce()
+        public ISauce CreateSauce()
         {
             return new MarinaraSauce();
         }
 
-        public List<Vegetable> CreateVegetables()
+        public List<IVegetable> CreateVegetables()
         {
-            List<Vegetable> veggies = new List<Vegetable>()
+            List<IVegetable> veggies = new List<IVegetable>()
             {
                 new Garlic(),
                 new Onion(),

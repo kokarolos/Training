@@ -1,6 +1,6 @@
 ﻿namespace Factory
 {
-    public class RedPepper : Vegetable
+    public class RedPepper : IVegetable
     {
 
     }

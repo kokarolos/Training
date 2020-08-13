@@ -4,12 +4,12 @@ namespace Factory
 {
     public interface IPizzaIngredientFactory
     {
-        Dough CreateDough();
-        Sauce CreateSauce();
-        Cheese CreateCheese();
-        List<Vegetable> CreateVegetables();
-        Pepperoni CreatePepperoni();
-        Clam CreateClam();
+        IDough CreateDough();
+        ISauce CreateSauce();
+        ICheese CreateCheese();
+        List<IVegetable> CreateVegetables();
+        IPepperoni CreatePepperoni();
+        IClam CreateClam();
     }
 
 }

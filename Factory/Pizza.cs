@@ -6,11 +6,11 @@ namespace Factory
     public abstract class Pizza 
     {
         public string Name { get; set; }
-        public Dough Dough { get; set; }
-        public Sauce Sauce { get; set; }
-        public List<Vegetable> Veggies { get; set; } = new List<Vegetable>();
-        public Cheese Cheese { get; set; }
-        public Clam Clam { get; set; }
+        public IDough Dough { get; set; }
+        public ISauce Sauce { get; set; }
+        public List<IVegetable> Veggies { get; set; } = new List<IVegetable>();
+        public ICheese Cheese { get; set; }
+        public IClam Clam { get; set; }
 
         public void Bake()
         {
