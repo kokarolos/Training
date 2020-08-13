@@ -43,16 +43,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHICheesePizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHIClamPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHIPepperoniPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHIVeggiePizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYCheesePizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYClamPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYPepperoniPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYVeggiePizza.cs" />
-
+    <Compile Include="Ingredients\Vital Ingredients\veggies\BlackOlive.cs" />
+    <Compile Include="IngredientFactory\ChicagoPizzaingredientsFactory.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\veggies\EggPlant.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\FrozenClam.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\Mozzarela.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\SlidesPepperoni.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\veggies\Spinach.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\ThickCrustDough.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\PlumtomatoSauce.cs" />
+    <Compile Include="Ingredients\Abstract Ingredients\Cheese.cs" />
+    <Compile Include="Ingredients\Abstract Ingredients\Clams.cs" />
+    <Compile Include="Ingredients\Abstract Ingredients\Pepperoni.cs" />
+    <Compile Include="Ingredients\Abstract Ingredients\Veggies.cs" />
+    <Compile Include="Ingredients\Abstract Ingredients\Sauce.cs" />
+    <Compile Include="Ingredients\Abstract Ingredients\Dough.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\FreshClams.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\veggies\Mushroom.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\veggies\Onion.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\veggies\Garlic.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\MarinaraSauce.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\veggies\RedPepper.cs" />
+    <Compile Include="IngredientFactory\NYPizzaIngredientFactory.cs" />
+    <Compile Include="IngredientFactory\PizzaIngredientFactory.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\ReggianoCheese.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\SlicedPepperoni.cs" />
+    <Compile Include="Ingredients\Vital Ingredients\ThinCrustDough.cs" />
+    <Compile Include="Pizzas\CheesePizza.cs" />
+    <Compile Include="Pizzas\ClamPizza.cs" />
+    <Compile Include="Pizzas\PepperoniPizza.cs" />
     <Compile Include="Pizzas\PizzaType.cs" />
+    <Compile Include="Pizzas\VeggiePizza.cs" />
     <Compile Include="Stores\Concrete Creators\ChicagoStylePizzaStore.cs" />
     <Compile Include="Stores\Concrete Creators\NYStylePizzaStore.cs" />
     <Compile Include="Pizzas\Toppings.cs" />
@@ -64,5 +85,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
