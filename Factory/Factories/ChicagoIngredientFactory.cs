@@ -2,7 +2,7 @@
 
 namespace Factory
 {
-    public class ChicagoIngredientFactory : IChicagoIngredientFactory
+    public class ChicagoIngredientFactory : IPizzaIngredientFactory
     {
         public Cheese CreateCheese()
         {

@@ -6,21 +6,25 @@ namespace Factory
     public abstract class Pizza
     {
         public string Name { get; set; }
-        public string Dough { get; set; }
-        public string Sauce { get; set; }
-        public List<string> Toppings { get; set; } = new List<string>();
+        public Dough Dough { get; set; }
+        public Sauce Sauce { get; set; }
+        public List<Vegetable> Veggies { get; set; } = new List<Vegetable>();
+        public Cheese Cheese { get; set; }
+        public Clam Clam { get; set; }
 
+        private IPizzaIngredientFactory _pizzaIngredientFactory;
+        public Pizza(IPizzaIngredientFactory pizzaIngredientFactory)
+        {
+            _pizzaIngredientFactory = pizzaIngredientFactory;
+        }
         public void Prepare()
         {
-            Console.WriteLine($"Preparing {GetType().Name} pizza... ");
-            Console.WriteLine("Tossing Dough.... ");
-            Console.WriteLine("Adding Sauce....");
-            Console.WriteLine("Adding toppings....");
-            foreach (var topping in Toppings)
-            {
-                Console.WriteLine($"{topping} added..");
-            }
+            Console.WriteLine($"Prepairing {GetType().Name}");
+            Dough = _pizzaIngredientFactory.CreateDough();
+            Sauce = _pizzaIngredientFactory.CreateSauce();
+            Cheese = _pizzaIngredientFactory.CreateCheese();
         }
+
         public void Bake()
         {
             Console.WriteLine($"Baking {GetType().Name} fore 25 minutes at 350C");
