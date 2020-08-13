@@ -1,33 +1,26 @@
-﻿namespace Factory1
+﻿using Factory1.IngredientFactory;
+using Factory1.Pizzas;
+
+namespace Factory1
 {
     public class NYStylePizzaStore : PizzaStore
     {
-        protected override Pizza CreatePizza(string type)
-        {
-            Pizza pizza = null;
-
-            if (type.Equals("Cheese")) { pizza = new NYCheesePizza(); }
-            else if (type.Equals("Peperoni")) { pizza = new NYPepperoniPizza(); }
-            else if (type.Equals("Clam")) { pizza = new NYClamPizza(); }
-            else if (type.Equals("Veggie")) { pizza = new NYVeggiePizza(); }
-            return pizza;
-            
         protected override Pizza CreatePizza(PizzaType type)
         {
+            PizzaIngredientFactory pizzaIngredientFactory = new NYPizzaIngredientFactory();
             switch (type)
             {
                 case PizzaType.Cheese:
-                    return new NYCheesePizza();
+                    return new CheesePizza(pizzaIngredientFactory);
                 case PizzaType.Clam:
-                    return new NYClamPizza();
+                    return new ClamPizza(pizzaIngredientFactory); 
                 case PizzaType.Peperoni:
-                    return new NYPepperoniPizza();
+                    return new PepperoniPizza(pizzaIngredientFactory); 
                 case PizzaType.Veggie:
-                    return new NYVeggiePizza();
+                    return new VeggiePizza(pizzaIngredientFactory); 
             }
 
             throw new System.InvalidOperationException();
-
         }
     }
 }

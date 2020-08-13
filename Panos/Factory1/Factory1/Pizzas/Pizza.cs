@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Factory1.IngredientFactory;
+using System;
 using System.Collections.Generic;
 
 namespace Factory1
@@ -6,24 +7,15 @@ namespace Factory1
     public abstract class Pizza
     {
         public string Name => GetType().Name;
-        protected string dough;
-        protected string sauce;
-                
-        protected List<Toppings> Toppings = new List<Toppings>();
+        protected Dough Dough;
+        protected Sauce Sauce;
+        protected Veggies[]Veggies;
+        protected Cheese Cheese;
+        protected Pepperoni Pepperoni;
+        protected Clams Clam;
 
-        public void Prepare()
-        {
-            Console.WriteLine($"Pizza {Name} is preparing");
-            Console.WriteLine($"Tossing dough");
-            Console.WriteLine($"Adding sause");
-            Console.WriteLine($"Adding Toppings : ");
-            foreach (var topping in Toppings)
-            {
-                Console.WriteLine($"\t{topping}  ");
-            }
+        public abstract void Prepare();
 
-
-        }
         public void Bake()
         {
             Console.WriteLine("Pizza is baking for 25 minutes at 350");
