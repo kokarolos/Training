@@ -5,7 +5,6 @@ namespace Factory
     public class ChicagoPizzaStore : PizzaStore
     {
         private ChicagoIngredientFactory _chicagoIgredientFactory = new ChicagoIngredientFactory();
-
         public override Pizza CreatePizza(string type)
         {
             switch (type)
