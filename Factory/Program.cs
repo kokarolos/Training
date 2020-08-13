@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Factory
+﻿namespace Factory
 {
     class Program
     {
+        //Abstract Factory Pattern Implementation example
         static void Main(string[] args)
         {
             PizzaStore nyStore = new NYPizzaStore();
