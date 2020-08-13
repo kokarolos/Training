@@ -19,7 +19,11 @@ namespace Factory1
             pizza = ChiStore.OrderPizza("Cheese");
             System.Console.WriteLine($"ethen ordered a {pizza.GetType().Name}");
 
+            
+            Pizza pizza = NyStore.OrderPizza(PizzaType.Cheese);
+            System.Console.WriteLine($"ethen ordered a {pizza.GetType().Name}");
 
+            Pizza pizza2 = ChiStore.OrderPizza(PizzaType.Veggie);
 
         }
     }

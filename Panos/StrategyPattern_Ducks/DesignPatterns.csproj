@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E343914-67F6-4FEA-9223-674C7B562553}</ProjectGuid>
+    <ProjectGuid>{839ABF9B-F5B1-4DB4-9D27-22CA6B496024}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Factory1</RootNamespace>
-    <AssemblyName>Factory1</AssemblyName>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,26 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHICheesePizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHIClamPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHIPepperoniPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\Chicago\CHIVeggiePizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYCheesePizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYClamPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYPepperoniPizza.cs" />
-    <Compile Include="Pizzas\Concrete Products\NY\NYVeggiePizza.cs" />
-
-    <Compile Include="Pizzas\PizzaType.cs" />
-    <Compile Include="Stores\Concrete Creators\ChicagoStylePizzaStore.cs" />
-    <Compile Include="Stores\Concrete Creators\NYStylePizzaStore.cs" />
-    <Compile Include="Pizzas\Toppings.cs" />
-    <Compile Include="Pizzas\Pizza.cs" />
-    <Compile Include="Stores\PizzaStore.cs" />
+    <Compile Include="Factories\FlyBehaviorFactory.cs" />
+    <Compile Include="Concrete\DecoyDuck.cs" />
+    <Compile Include="Duck.cs" />
+    <Compile Include="DuckBehavior\FlyNoWay.cs" />
+    <Compile Include="Duck Behavior Enums\FlyOptions.cs" />
+    <Compile Include="DuckBehavior\FlyWithWings.cs" />
+    <Compile Include="Interfaces\IFlyable.cs" />
+    <Compile Include="Concrete\MalardDuck.cs" />
+    <Compile Include="DuckBehavior\MuteQuack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\IQuackable.cs" />
+    <Compile Include="DuckBehavior\Quack.cs" />
+    <Compile Include="Factories\QuackBehaviorFactory.cs" />
+    <Compile Include="Duck Behavior Enums\QuackOptions.cs" />
+    <Compile Include="Concrete\RedHeadDuck.cs" />
+    <Compile Include="Concrete\RubberDuck.cs" />
+    <Compile Include="DuckBehavior\Squeack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

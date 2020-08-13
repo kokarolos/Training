@@ -1,6 +1,0 @@
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStationPractice\bin\Debug\WeatherStationPractice.exe.config
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStationPractice\bin\Debug\WeatherStationPractice.exe
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStationPractice\bin\Debug\WeatherStationPractice.pdb
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStationPractice\obj\Debug\WeatherStationPractice.csproj.CoreCompileInputs.cache
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStationPractice\obj\Debug\WeatherStationPractice.exe
-C:\Users\k.koniewicz.PROSVASISHQ\source\repos\Training\WeatherStation\WeatherStationPractice\obj\Debug\WeatherStationPractice.pdb

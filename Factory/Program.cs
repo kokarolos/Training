@@ -9,7 +9,6 @@
             nyStore.OrderPizza("Cheese");
             chicagoStore.OrderPizza("Veggie");
             chicagoStore.OrderPizza("Clam");
-            chicagoStore.OrderPizza("Veggie");
-        }
+            chicagoStore.OrderPizza("Veggie");        }
     }
 }

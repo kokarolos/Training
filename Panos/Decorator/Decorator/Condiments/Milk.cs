@@ -12,7 +12,6 @@
         public override string GetDescription()
         {
             return Beverage.GetDescription() + "Milk" ;
-
         }
         public override decimal Cost()  // Compute the cost of the Beverage with our decorator
         {
