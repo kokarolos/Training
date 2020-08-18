@@ -1,11 +1,11 @@
 ﻿namespace Command
 {
-    public class CeilingFanHighCommand : ICommand
+    public class CeilingFanLowCommand : ICommand
     {
         private CeilingFan _ceilingFan;
         private int _previouSpeed;
 
-        public CeilingFanHighCommand(CeilingFan ceilingFan)
+        public CeilingFanLowCommand(CeilingFan ceilingFan)
         {
             _ceilingFan = ceilingFan;
         }
@@ -13,7 +13,7 @@
         public void Execute()
         {
             _previouSpeed = _ceilingFan.Speed;
-            _ceilingFan.High();
+            _ceilingFan.Low();
         }
 
         public void Undo()
@@ -22,11 +22,11 @@
             {
                 _ceilingFan.High();
             }
-            else if(_previouSpeed == CeilingFan.MEDIUM)
+            else if (_previouSpeed == CeilingFan.MEDIUM)
             {
                 _ceilingFan.Medium();
             }
-            else if(_previouSpeed == CeilingFan.LOW)
+            else if (_previouSpeed == CeilingFan.LOW)
             {
                 _ceilingFan.Low();
             }

@@ -24,8 +24,7 @@ namespace Command
 
         public void Off()
         {
-            Speed = LOW;
-            Console.WriteLine($"ceilingfan turned off");
+            Speed = OFF;
         }
 
         public void High()
