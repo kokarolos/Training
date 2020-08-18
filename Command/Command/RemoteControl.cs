@@ -4,8 +4,9 @@ namespace Command
 {
     public class RemoteControl
     {
-        ICommand[] _onCommands;
-        ICommand[] _offCommands;
+        private ICommand[] _onCommands;
+        private ICommand[] _offCommands;
+        private ICommand _undoCommand;
 
         public RemoteControl()
         {
@@ -17,6 +18,7 @@ namespace Command
                 _onCommands[i] = noCommand;
                 _offCommands[i] = noCommand;
             }
+            _undoCommand = noCommand;
         }
 
         public void SetCommand(int slot, ICommand onCommand, ICommand offCommand)
@@ -27,15 +29,19 @@ namespace Command
 
         public void OnButtonWasPressed(int slot)
         {
-            if (_onCommands[slot] != null)
-            {
-                _onCommands[slot].Execute();
-            }
+            _onCommands[slot].Execute();
+            _undoCommand = _onCommands[slot];
         }
 
         public void OffButtonWasPressed(int slot)
         {
             _offCommands[slot].Execute();
+            _undoCommand = _onCommands[slot];
+        }
+
+        public void UndoButtonWasPressed()
+        {
+            _undoCommand.Undo();
         }
 
         public override string ToString()
