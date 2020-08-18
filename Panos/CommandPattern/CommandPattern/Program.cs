@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
+using CommandPattern.Ceiling;
 
 namespace CommandPattern
 {
@@ -11,44 +10,21 @@ namespace CommandPattern
 
             RemoteControl RemoteControl = new RemoteControl();
 
-            Light LivingRoomlight = new Light("Living room");
-            Light Kitchenlight = new Light("Kitchen room");
-            CeilingFan ceilingfan = new CeilingFan("Living Room");
-            GarrageDoor garagedoor = new GarrageDoor("");
-            Stereo stereo = new Stereo("Living room");
+            Light light = new Light("Living Room");
+            CeilingFan ceiling = new CeilingFan("Living Room");
+            LightOnCommand lightOn = new LightOnCommand(light);
+            LightOfCommand lightOf = new LightOfCommand(light);
+            CeilingFanLowcommand fanLowcommand = new CeilingFanLowcommand(ceiling);
+            CeilingFanOfcommand fanOfcommand = new CeilingFanOfcommand(ceiling);
 
 
+            ICommand[] partyOn = { lightOn, fanLowcommand };
+            ICommand[] partyOff = { lightOf, fanOfcommand };
 
-            LightOnCommand livingroomLightOn = new LightOnCommand(LivingRoomlight);
-            LightOfCommand livingroomLightOf = new LightOfCommand(LivingRoomlight);
-            LightOnCommand kitchenLightOn = new LightOnCommand(Kitchenlight);
-            LightOfCommand kitchenLightOf = new LightOfCommand(Kitchenlight);
+            MacroCommand partyOnMacro = new MacroCommand(partyOn);
+            MacroCommand partyOffMacro = new MacroCommand(partyOff);
 
-            CeilingFanOncommand ceilingFanOncommand = new CeilingFanOncommand(ceilingfan);
-            CeilingFanOfcommand ceilingFanOfcommand = new CeilingFanOfcommand(ceilingfan);
-
-            GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(garagedoor);
-            GarageDoorCloseCommand garageDoorCloseCommand = new GarageDoorCloseCommand(garagedoor);
-
-            StereoOnWithCDCommand stereoOnWithCDCommand = new StereoOnWithCDCommand(stereo);
-            StereoOfWithCDCommand stereoOfWithCDCommand = new StereoOfWithCDCommand(stereo);
-
-
-
-            RemoteControl.SetCommand(0, livingroomLightOn, livingroomLightOf);
-            RemoteControl.SetCommand(1, kitchenLightOn, kitchenLightOf);
-            RemoteControl.SetCommand(2, ceilingFanOncommand, ceilingFanOfcommand);
-            RemoteControl.SetCommand(3, stereoOnWithCDCommand, stereoOfWithCDCommand);
-
-
-            System.Console.WriteLine(RemoteControl);
-
-
-            RemoteControl.OnButtonWasPressed(0);
-            RemoteControl.OnButtonWasPressed(1);
-            RemoteControl.OnButtonWasPressed(2);
-            RemoteControl.OffButtonWasPressed(1);
-
+            RemoteControl.SetCommand(0, partyOnMacro, partyOffMacro);
 
 
         }

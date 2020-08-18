@@ -1,19 +1,25 @@
-﻿namespace CommandPattern
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CommandPattern
 {
-    public class CeilingFanOfcommand:ICommand
+    public class CeilingFanHighCommand : ICommand
     {
         CeilingFan ceilingFan;
         int prevspeed;
 
-        public CeilingFanOfcommand(CeilingFan CeilingFan)
+        public CeilingFanHighCommand(CeilingFan ceilingFan)
         {
-            this.ceilingFan = CeilingFan;
+            this.ceilingFan = ceilingFan;
         }
 
         public void Excecute()
         {
             prevspeed = ceilingFan.GetSpeed();
-            ceilingFan.Off();
+            ceilingFan.High();
         }
 
         public void Undo()
@@ -30,11 +36,10 @@
             {
                 ceilingFan.Low();
             }
-            else if (prevspeed == CeilingFan.OFF)
+            else if (prevspeed==CeilingFan.OFF)
             {
                 ceilingFan.Off();
             }
         }
     }
-
 }

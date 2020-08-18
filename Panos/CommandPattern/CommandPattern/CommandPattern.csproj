@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ceiling\CeilingFan.cs" />
+    <Compile Include="Ceiling\CeilingFanHighCommand.cs" />
+    <Compile Include="Ceiling\CeilingFanMediumcommand.cs" />
     <Compile Include="Ceiling\CeilingFanOfcommand.cs" />
-    <Compile Include="Ceiling\CeilingFanOncommand.cs" />
+    <Compile Include="Ceiling\CeilingFanLowcommand.cs" />
     <Compile Include="Garage\GarageDoorCloseCommand.cs" />
     <Compile Include="Garage\GarageDoorOpenCommand.cs" />
     <Compile Include="Garage\GarageLighrOnCommand.cs" />
@@ -54,6 +56,7 @@
     <Compile Include="Light\Light.cs" />
     <Compile Include="Light\LightOfCommand.cs" />
     <Compile Include="Light\LightOnCommand.cs" />
+    <Compile Include="Macrocommand\MacroCommand.cs" />
     <Compile Include="Stereo\Stereo.cs" />
     <Compile Include="RemoteControl.cs" />
     <Compile Include="test\RemoteLoader.cs" />

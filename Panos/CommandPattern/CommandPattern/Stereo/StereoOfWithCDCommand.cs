@@ -13,5 +13,10 @@
         {
             Stereo.Of();
         }
+
+        public void Undo()
+        {
+            Stereo.On(); 
+        }
     }
 }
