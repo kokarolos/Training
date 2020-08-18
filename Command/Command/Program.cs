@@ -12,38 +12,45 @@ namespace Command
             CeilingFan ceilingFan = new CeilingFan("Living Room");
             GarageDoor garageDoor = new GarageDoor();
             Stereo stereo = new Stereo("Living room");
+            AirCondition airCondition = new AirCondition();
 
             LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
-            LightOnCommand livingRoomLightOff = new LightOnCommand(livingRoomLight);
+            LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
+
             LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
-            LightOnCommand kitchenLightOff = new LightOnCommand(kitchenLight);
+            LightOffCommand kitchenLightOff = new LightOffCommand(kitchenLight);
 
             CeilingFanOnCommand ceilingFanOn = new CeilingFanOnCommand(ceilingFan);
-            CeilingFanOnCommand ceilingFanOff = new CeilingFanOnCommand(ceilingFan);
+            CeilingFanOffCommand ceilingFanOff = new CeilingFanOffCommand(ceilingFan);
 
             GarageDoorOpenCommand garageDoorUp = new GarageDoorOpenCommand(garageDoor);
-            GarageDoorOpenCommand garageDoorOff = new GarageDoorOpenCommand(garageDoor);
+            GarageDoorCloseCommand garageDoorOff = new GarageDoorCloseCommand(garageDoor);
 
             StereoOnWithCDCommand stereoOnWithCD = new StereoOnWithCDCommand(stereo);
-            StereoOnWithCDCommand stereoOff = new StereoOnWithCDCommand(stereo);
+            StereoOffCommand stereoOff = new StereoOffCommand(stereo);
+
+            AirConditionOnCommand airCondtionOnCommand = new AirConditionOnCommand(airCondition);
+            AirconditionOffCommand airCondtionOffCommand = new AirconditionOffCommand(airCondition);
 
             remote.SetCommand(0, livingRoomLightOn, livingRoomLightOff);
             remote.SetCommand(1, kitchenLightOn, kitchenLightOff);
             remote.SetCommand(2, ceilingFanOn, ceilingFanOff);
             remote.SetCommand(3, stereoOnWithCD, stereoOff);
+            remote.SetCommand(4, airCondtionOnCommand, airCondtionOffCommand);
 
             Console.WriteLine(remote);
 
-            remote.OnButtonWasPressed(0);
-            remote.OnButtonWasPressed(1);
-            remote.OnButtonWasPressed(2);
-            remote.OffButtonWasPressed(3);
             remote.OffButtonWasPressed(0);
             remote.OffButtonWasPressed(1);
             remote.OffButtonWasPressed(2);
             remote.OffButtonWasPressed(3);
-
-
+            remote.OffButtonWasPressed(4);
+            Console.WriteLine();
+            remote.OnButtonWasPressed(0);
+            remote.OnButtonWasPressed(1);
+            remote.OnButtonWasPressed(2);
+            remote.OnButtonWasPressed(3);
+            remote.OnButtonWasPressed(4);
         }
     }
 }

@@ -12,5 +12,10 @@
         {
             _garageDoor.Up();
         }
+
+        public void Undo()
+        {
+            _garageDoor.Down();
+        }
     }
 }
