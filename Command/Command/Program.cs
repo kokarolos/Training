@@ -13,7 +13,6 @@ namespace Command
             GarageDoor garageDoor = new GarageDoor();
             Stereo stereo = new Stereo("Living room");
 
-
             LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
             LightOnCommand livingRoomLightOff = new LightOnCommand(livingRoomLight);
             LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
@@ -27,7 +26,6 @@ namespace Command
 
             StereoOnWithCDCommand stereoOnWithCD = new StereoOnWithCDCommand(stereo);
             StereoOnWithCDCommand stereoOff = new StereoOnWithCDCommand(stereo);
-
 
             remote.SetCommand(0, livingRoomLightOn, livingRoomLightOff);
             remote.SetCommand(1, kitchenLightOn, kitchenLightOff);

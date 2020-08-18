@@ -6,6 +6,7 @@ namespace Command
     {
         ICommand[] _onCommands;
         ICommand[] _offCommands;
+
         public RemoteControl()
         {
             _onCommands = new ICommand[7];
@@ -17,14 +18,19 @@ namespace Command
                 _offCommands[i] = noCommand;
             }
         }
-        public void SetCommand(int slot,ICommand onCommand,ICommand offCommand)
+
+        public void SetCommand(int slot, ICommand onCommand, ICommand offCommand)
         {
             _onCommands[slot] = onCommand;
             _offCommands[slot] = offCommand;
         }
+
         public void OnButtonWasPressed(int slot)
         {
-            _onCommands[slot].Execute();
+            if (_onCommands[slot] != null)
+            {
+                _onCommands[slot].Execute();
+            }
         }
 
         public void OffButtonWasPressed(int slot)
