@@ -4,9 +4,9 @@ namespace Command
 {
     public class RemoteControl
     {
-        ICommand[] _onCommands;
-        ICommand[] _offCommands;
-        ICommand _undoCommand;
+        private ICommand[] _onCommands;
+        private ICommand[] _offCommands;
+        private ICommand _undoCommand;
 
         public RemoteControl()
         {

@@ -55,18 +55,25 @@
     <Compile Include="Concrete\GarageDoor.cs" />
     <Compile Include="Commands\GarageDoorCloseCommand.cs" />
     <Compile Include="Commands\GarageDoorOpenCommand.cs" />
+    <Compile Include="Concrete\Hottub.cs" />
+    <Compile Include="Commands\HottubOffCommand.cs" />
+    <Compile Include="Commands\HottunOnCommand.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="ISwitchable.cs" />
     <Compile Include="Concrete\Light.cs" />
     <Compile Include="Commands\LightOffCommand.cs" />
     <Compile Include="Commands\LightOnCommand.cs" />
     <Compile Include="Commands\NoCommand.cs" />
+    <Compile Include="MacroCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoteControl.cs" />
     <Compile Include="Concrete\Stereo.cs" />
     <Compile Include="Commands\StereoOffCommand.cs" />
     <Compile Include="Commands\StereoOnWithCDCommand.cs" />
+    <Compile Include="Concrete\TV.cs" />
+    <Compile Include="Commands\TvOffCommand.cs" />
+    <Compile Include="Commands\TvOnCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
