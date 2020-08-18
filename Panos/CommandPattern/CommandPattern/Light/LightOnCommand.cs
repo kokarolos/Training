@@ -13,5 +13,10 @@
         {
             light.On();
         }
+
+        public void Undo()
+        {
+            light.Of();
+        }
     }
 }

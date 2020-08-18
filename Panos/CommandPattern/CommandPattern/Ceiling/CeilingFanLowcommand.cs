@@ -1,19 +1,20 @@
 ﻿namespace CommandPattern
 {
-    public class CeilingFanOfcommand:ICommand
+    public class CeilingFanLowcommand :ICommand
     {
+
         CeilingFan ceilingFan;
         int prevspeed;
 
-        public CeilingFanOfcommand(CeilingFan CeilingFan)
+        public CeilingFanLowcommand(CeilingFan ceilingFan)
         {
-            this.ceilingFan = CeilingFan;
+            this.ceilingFan = ceilingFan;
         }
 
         public void Excecute()
         {
             prevspeed = ceilingFan.GetSpeed();
-            ceilingFan.Off();
+            ceilingFan.Low();
         }
 
         public void Undo()
@@ -35,6 +36,7 @@
                 ceilingFan.Off();
             }
         }
+
     }
 
 }

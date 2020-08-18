@@ -15,7 +15,11 @@
             Stereo.SetCD();
             Stereo.SetVolume(11);
         }
+
+        public void Undo()
+        {
+            Stereo.SetVolume(0);
+            Stereo.Of();
+        }
     }
-
-
 }

@@ -13,5 +13,9 @@
         {
             light.Of();
         }
+        public void Undo()
+        {
+            light.On();
+        }
     }
 }

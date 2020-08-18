@@ -4,7 +4,11 @@
     {
         public void Excecute()
         {
-            
+        }
+
+        public void Undo()
+        {
+            throw new System.NotImplementedException();
         }
     }
 
