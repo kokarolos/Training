@@ -8,7 +8,6 @@ namespace Adapter
         {
             Console.WriteLine("I am Flying");
         }
-
         public void Quack()
         {
             Console.WriteLine("Quack");
