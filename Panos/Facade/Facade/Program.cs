@@ -19,6 +19,12 @@ namespace Facade
             Screen screen = new Screen();
             PopcornPopper popper = new PopcornPopper();
             HomeTheatreFacade homeTheater = new HomeTheatreFacade(amp, tuner, dvd, cd, projector, lights, screen, popper);
+
+
+            homeTheater.WatchMovie("Avatar");
+            homeTheater.EndMovie();
+
+
         }
     }
 }
