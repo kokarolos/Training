@@ -12,12 +12,12 @@
 
         public bool HasNext()
         {
-            return _position >= _items.Length || _items[_position] == null;
+            return _position <= _items.Length && !(_items[_position] is null);
         }
 
         public object Next()
         {
-            MenuItem menuItem = _items[_position];
+            var menuItem = _items[_position];
             _position++;
             return menuItem;
         }

@@ -20,14 +20,9 @@ namespace Iterator
             _menuItems.Add(menuItem);
         }
 
-        public List<MenuItem> GetMenuItems()
-        {
-            return _menuItems;
-        }
-
         public Iterator CreateIterator()
         {
-            //return new DinnerMenuIterator(_menuItems);
+            return new PancakeHouseIterator(_menuItems);
         }
     }
 }
