@@ -2,7 +2,7 @@
 
 namespace Iterator
 {
-    public class PancakeHouseMenu
+    public class PancakeHouseMenu : IMenu
     {
         private List<MenuItem> _menuItems;
         public PancakeHouseMenu()
