@@ -10,18 +10,24 @@
             this.items = items;
         }
 
+
+        public bool HasNext()
+        {
+            if (position >= items.Length || items[position] == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         public object Next()
         {
             MenuItem menuItem = items[position];
             position = position + 1;
             return menuItem;
-        }
-
-        public bool HasNext()
-        {
-            if (position >= items.Length || items[position] == null)
-            {return false;}
-            else { return true; }
         }
 
     }
