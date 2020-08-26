@@ -12,8 +12,8 @@ namespace Iterator
             AddItem("Regular Pancake Breakfast", "Pancakes with fried eggs,sausage", false, 2.99);
             AddItem("Blueburry Pancakes", "Pancakes made with fresh BlueBerries", true, 3.49);
             AddItem("Waffles", "Waffles, with your choice of blueberries or strawberries", true, 3.59);
-
         }
+
         public void AddItem(string name,string description,bool vegeterian,double price)
         {
             MenuItem menuItem = new MenuItem(name, description, vegeterian, price);

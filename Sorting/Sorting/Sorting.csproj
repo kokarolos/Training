@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD06C89C-D25B-422E-BF28-17A78E73E7D7}</ProjectGuid>
+    <ProjectGuid>{E2642CA9-4584-4A72-9FB8-3444CFB0B538}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Iterator</RootNamespace>
-    <AssemblyName>Iterator</AssemblyName>
+    <RootNamespace>Sorting</RootNamespace>
+    <AssemblyName>Sorting</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DinerMenu.cs" />
-    <Compile Include="DinnerMenuIterator.cs" />
-    <Compile Include="Iterator.cs" />
-    <Compile Include="MenuItem.cs" />
-    <Compile Include="PancakeHouseIterator.cs" />
-    <Compile Include="PancakeHouseMenu.cs" />
+    <Compile Include="BubbleSort.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="ISortable.cs" />
+    <Compile Include="ISortingMethod.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="IMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Waitress.cs" />
+    <Compile Include="SortingManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

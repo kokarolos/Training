@@ -1,6 +1,6 @@
 ﻿namespace Iterator
 {
-    public class DinerMenu
+    public class DinerMenu :IMenu
     {
         private static int _maxItems = 6;
         private int _numberOfItems = 0;

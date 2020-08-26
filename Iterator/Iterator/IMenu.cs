@@ -1,10 +1,7 @@
 ﻿namespace Iterator
 {
-    partial class Program
+    public interface IMenu
     {
-        public interface IMenu
-        {
-            Iterator CreateIterator();
-        }
+        Iterator CreateIterator();
     }
 }
