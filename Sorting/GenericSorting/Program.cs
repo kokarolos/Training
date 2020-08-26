@@ -6,6 +6,7 @@ namespace GenericSorting
 {
     class Program
     {
+        //TODO : Turn Void To IEnumerable<T> 
         static void Main(string[] args)
         {
             EmployeesSort employeesSort = new EmployeesSort();
@@ -42,22 +43,30 @@ namespace GenericSorting
             }
             return emps;
         }
+       
+    }
 
-        public void QuickSort()
+    public abstract class QuickSort<T>
+    {
+        protected abstract IComparer<T> GetComparer();
+        protected abstract IEnumerable<T> GetSource();
+        public IEnumerable<T> Sort()
         {
             T[] emps = GetSource().ToArray();
             IComparer<T> comparer = GetComparer();
-            QuickSort(emps, 0, emps.Length - 1, comparer);
+            return Sort(emps, 0, emps.Length - 1, comparer);
         }
 
         //left ->first
         //right -> last
-        private IEnumerable<T> QuickSort(IEnumerable<T> emps, int left, int right, IComparer<T> comparer)
+        //IEnumerable -> GetEnumerator? How to itterate through Ienumerable;
+        private IEnumerable<T> Sort(IEnumerable<T> emps, int left, int right, IComparer<T> comparer)
         {
             int leftIndex = left;
             int rightIndex = right;
             T currentEmployee = emps.ElementAt(left);
             T nextEmployee = emps.ElementAt(right);
+            List<T> tempList = new List<T>();
 
             //Already Sorted
             if (emps is null || emps.Count() == 1)
@@ -82,10 +91,9 @@ namespace GenericSorting
                 {
 
                     T temp = emps.ElementAt(left);
-                    var tempList = emps.ToList();
-                    tempList[left] = emps[right];
-                    emps[left] = emps[right];
-                    emps[right] = temp;
+                    tempList = emps.ToList();
+                    tempList[left] = emps.ElementAt(right);
+                    tempList[right] = temp;
 
                     left++;
                     right--;
@@ -93,21 +101,18 @@ namespace GenericSorting
 
                 if (left < right)
                 {
-                    QuickSort();
+                    Sort(emps, left, rightIndex, comparer);
                 }
                 if (left < right)
                 {
-
+                    Sort(emps, leftIndex, right, comparer);
                 }
             }
+            return tempList.AsEnumerable();
         }
-
-
-
-
     }
 
-    public class EmployeesSort : BubbleSort<Employee> // <- needs to become more Abstract
+    public class EmployeesSort : QuickSort<Employee> // <- needs to become more Abstract
     {
         protected override IComparer<Employee> GetComparer()
         {
