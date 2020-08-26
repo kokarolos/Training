@@ -11,9 +11,9 @@
                 {
                     if(sortables[i].Id > sortables[i + 1].Id)
                     {
-                        temp = sortables[i + 1];
-                        sortables[i + 1] = sortables[i];
-                        sortables[i] = temp;
+                       temp = sortables[i + 1];
+                       sortables[i + 1] = sortables[i];
+                       sortables[i] = temp;
                     }
                 }
             }
