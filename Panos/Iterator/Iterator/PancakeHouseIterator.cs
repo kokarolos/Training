@@ -12,10 +12,20 @@ namespace Iterator
             this.items = items;
         }
 
+        
+
         public bool HasNext()
         {
-            return position <= items.Count && !(items[position] is null);
+            if (position >= items.Count || items[position] == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
+
 
         public object Next()
         {

@@ -15,8 +15,10 @@
         {
             Iterator pancakeIterator = PanCakeHouseMenu.CreateIterator();
             Iterator dinnerIterator = DinerMenu.CreateIterator();
-            System.Console.WriteLine("BREAKFAST");
+            System.Console.WriteLine($"BREAKFAST\n\n\n\n");
             PrintMenu(pancakeIterator);
+            System.Console.WriteLine("DINNER");
+            PrintMenu(dinnerIterator);
         }
 
         private void PrintMenu(Iterator iterator)
@@ -29,8 +31,5 @@
                 System.Console.WriteLine(menuItem.GetDescription());
             }
         }
-
-
-
     }
 }
