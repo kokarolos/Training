@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{862EA572-C681-4A47-A455-7AFFBF9643C7}</ProjectGuid>
+    <ProjectGuid>{3CABD94F-4B5A-4036-9214-B8F5F138E9D9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PeopleSorting</RootNamespace>
-    <AssemblyName>PeopleSorting</AssemblyName>
+    <RootNamespace>BubbleSort</RootNamespace>
+    <AssemblyName>BubbleSort</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sorting Methods\BubbleSort.cs" />
-    <Compile Include="Concrete Classes\Employe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

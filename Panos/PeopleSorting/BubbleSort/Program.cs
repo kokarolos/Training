@@ -3,75 +3,53 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Generic_QuickSort
+namespace SorttingEmployees
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             EmployeesSort employeesSort = new EmployeesSort();
-            var emps = employeesSort.GetSource().ToArray();
-            employeesSort.QuickSortMethod(emps, 0, emps.Length-1);
-
-            Console.WriteLine("Print Employees");
+            var emps = employeesSort.Sort();
+            Console.WriteLine("Print Sort");
             foreach (var item in emps)
             {
                 Console.WriteLine(item.ToString());
             }
+            Console.ReadLine();
         }
     }
-    public abstract class QuickSort<T>
+    public abstract class BubbleSort<T>
     {
-        public abstract IEnumerable<T> GetSource();
-        public abstract IComparer<T> GetComparer();
-
-        public int Partition(T[] emps, int low, int high)
+        protected abstract IComparer<T> GetComparer();
+        protected abstract IEnumerable<T> GetSource();
+        public IEnumerable<T> Sort()
         {
-            emps = GetSource().ToArray();
-            
-            T pivot = emps[high];
+            T[] emps = GetSource().ToArray();
             T temp;
-            T temp1;
-            int i = (low - 1);
-            for (int j = low; j < high; j++)
+            for (int j = 0; j <= emps.Length - 2; j++)
             {
-                IComparer<T> comparer = GetComparer();
-                if (comparer.Compare( emps[j] , pivot)==-1)
+                for (int i = 0; i <= emps.Length - 2; i++)
                 {
-                    i++;
-                    temp = emps[i];
-                    emps[i] = emps[j];
-                    emps[j] = temp;
+                    IComparer<T> comparer = this.GetComparer();
+                    if (comparer.Compare(emps[i], emps[i + 1]) == 1)
+                    {
+                        temp = emps[i + 1];
+                        emps[i + 1] = emps[i];
+                        emps[i] = temp;
+                    }
                 }
-            }
-            temp1 = emps[i + 1];
-            emps[i + 1] = emps[high];
-            emps[high] = temp1;
-
-            return i + 1;
-        }
-
-        public IEnumerable<T> QuickSortMethod(T[]emps, int low, int high) 
-        {
-            if (low<high)
-            {
-                int pi = Partition(emps, low, high);
-                QuickSortMethod(emps, low, high);
-                QuickSortMethod(emps, pi + 1, high);
             }
             return emps;
         }
     }
-
-    public class EmployeesSort : QuickSort<Employee>
+    public class EmployeesSort : BubbleSort<Employee>
     {
-        public override IComparer<Employee> GetComparer()
+        protected override IComparer<Employee> GetComparer()
         {
             return new EmployeeCompareWithLastName();
         }
-        public override IEnumerable<Employee> GetSource()
+        protected override IEnumerable<Employee> GetSource()
         {
             return new List<Employee>()
             {
