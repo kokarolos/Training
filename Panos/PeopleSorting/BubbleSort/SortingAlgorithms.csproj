@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comparers\EmployeeCompareWithFirstName.cs" />
+    <Compile Include="Comparers\EmployeeCompareWithID.cs" />
+    <Compile Include="Comparers\EmployeeCompareWithLastName.cs" />
+    <Compile Include="Concrete classes\Employee.cs" />
+    <Compile Include="Sorting Implementation\EmployeesQuickSort.cs" />
+    <Compile Include="Sorting Implementation\EmployeesBubbleSort.cs" />
+    <Compile Include="Generic Sorting Templates\BubbleSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Generic Sorting Templates\QuickSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
