@@ -3,10 +3,10 @@ using System.Linq;
 
 namespace GenericSorting
 {
-    public abstract class BubbleSort<T> : ISortingMethod<T>
+    public abstract class BubbleSort<T> 
     {
-        protected abstract IComparer<T> GetComparer();
-        protected abstract IEnumerable<T> GetSource();
+       protected abstract IComparer<T> GetComparer();
+       protected abstract IEnumerable<T> GetSource();
 
         public IEnumerable<T> Sort()
         {

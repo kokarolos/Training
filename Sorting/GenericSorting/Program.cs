@@ -6,7 +6,7 @@ namespace GenericSorting
     {
         static void Main(string[] args)
         {
-            EmployeesBSort employeesBSort = new EmployeesBSort(new QuickSortFirstName());
+            EmployeesQSort employeesBSort = new EmployeesQSort(new QuickSortFirstName());
             var sorted = employeesBSort.Sort();
             foreach (var item in sorted)
             {

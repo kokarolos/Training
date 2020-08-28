@@ -2,10 +2,10 @@
 
 namespace GenericSorting
 {
-    public class EmployeesBSort : QuickSortFirstName
+    public class EmployeesQSort : QuickSortFirstName
     {
         private QuickShort<Employee> _quickSortMethod;
-        public EmployeesBSort(QuickShort<Employee> quickSortMethod)
+        public EmployeesQSort(QuickShort<Employee> quickSortMethod)
         {
             _quickSortMethod = quickSortMethod;
         }
