@@ -47,6 +47,7 @@
     <Compile Include="Comparers\EmployeeCompareWithID.cs" />
     <Compile Include="Comparers\EmployeeCompareWithLastName.cs" />
     <Compile Include="Concrete classes\Employee.cs" />
+    <Compile Include="Comparers\CompareWith.cs" />
     <Compile Include="Sorting Implementation\EmployeesQuickSort.cs" />
     <Compile Include="Sorting Implementation\EmployeesBubbleSort.cs" />
     <Compile Include="Generic Sorting Templates\BubbleSort.cs" />

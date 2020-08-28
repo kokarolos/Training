@@ -25,5 +25,26 @@ namespace SorttingEmployees
             }
             return emps;
         }
+
+
+
+        public static IComparer<Employee> SelectComparison(CompareWith option)
+        {
+            switch (option)
+            {
+                case CompareWith.FirstName:
+                    return new EmployeeCompareWithFirstName();
+
+                case CompareWith.LastName:
+                    return new EmployeeCompareWithLastName();
+
+                case CompareWith.Id:
+                    return new EmployeeCompareWithID();
+            }
+
+            throw new System.InvalidOperationException();
+        }
+
+
     }
 }

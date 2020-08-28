@@ -5,7 +5,7 @@ namespace SorttingEmployees
     {
         protected override IComparer<Employee> GetComparer()
         {
-            return new EmployeeCompareWithFirstName();
+            return SelectComparison(CompareWith.Id);
         }
         protected override IEnumerable<Employee> GetSource()
         {
