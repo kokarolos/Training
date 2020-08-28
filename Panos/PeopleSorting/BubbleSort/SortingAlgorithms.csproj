@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{862EA572-C681-4A47-A455-7AFFBF9643C7}</ProjectGuid>
+    <ProjectGuid>{3CABD94F-4B5A-4036-9214-B8F5F138E9D9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PeopleSorting</RootNamespace>
-    <AssemblyName>PeopleSorting</AssemblyName>
+    <RootNamespace>BubbleSort</RootNamespace>
+    <AssemblyName>BubbleSort</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sorting Methods\BubbleSort.cs" />
-    <Compile Include="Concrete Classes\Employe.cs" />
+    <Compile Include="Comparers\EmployeeCompareWithFirstName.cs" />
+    <Compile Include="Comparers\EmployeeCompareWithID.cs" />
+    <Compile Include="Comparers\EmployeeCompareWithLastName.cs" />
+    <Compile Include="Concrete classes\Employee.cs" />
+    <Compile Include="Sorting Implementation\EmployeesQuickSort.cs" />
+    <Compile Include="Sorting Implementation\EmployeesBubbleSort.cs" />
+    <Compile Include="Generic Sorting Templates\BubbleSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Generic Sorting Templates\QuickSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
