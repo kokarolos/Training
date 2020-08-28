@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6B371724-2A2D-4430-97F5-ACAE0C526679}</ProjectGuid>
+    <ProjectGuid>{D7083835-C02D-4F1D-BAC2-EB0DF58CAE1C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GenericSorting</RootNamespace>
-    <AssemblyName>GenericSorting</AssemblyName>
+    <RootNamespace>Generictest</RootNamespace>
+    <AssemblyName>Generictest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComparerEnum.cs" />
-    <Compile Include="SortingAlgo\BubbleSort.cs" />
-    <Compile Include="Factory\ComparerFactory.cs" />
-    <Compile Include="Concrete\Employee.cs" />
-    <Compile Include="Comparers\EmployeeCompareWithFirstName.cs" />
-    <Compile Include="Comparers\EmployeeCompareWithID.cs" />
-    <Compile Include="Comparers\EmployeeCompareWithLastName.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ISortingMethod.cs" />
-    <Compile Include="SortingAlgo\QuickShort.cs" />
-    <Compile Include="SortingMethodEnum.cs" />
-    <Compile Include="SortTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

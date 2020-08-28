@@ -5,17 +5,17 @@ namespace GenericSorting
 {
     public class ComparerFactory<T>
     {
-        public static IComparer<T> Create(string type)
+        public static IComparer<T> Create(ComparerEnum type)
         {
-            if (type.ToLower().Equals("id"))
+            if (type == ComparerEnum.Id)
             {
                 return new EmployeeCompareWithID() as IComparer<T>;
             }
-            if (type.ToLower().Equals("firstname"))
+            if (type == ComparerEnum.FirstName)
             {
                 return new EmployeeCompareWithFirstName() as IComparer<T>;
             }
-            if (type.ToLower().Equals("lastname"))
+            if (type == ComparerEnum.LastName)
             {
                 return new EmployeeCompareWithLastName() as IComparer<T>;
             }

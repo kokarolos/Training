@@ -3,24 +3,21 @@ using System.Linq;
 
 namespace GenericSorting
 {
-    public abstract class QuickShort<T>
+    public class QuickShort<T> : ISortingMethod<T>
     {
-        protected abstract IComparer<T> GetComparer();
-        protected abstract IEnumerable<T> GetSource();
-
-        public IEnumerable<T> Sort()
+        public IEnumerable<T> Sort(IEnumerable<T> array, IComparer<T> comparer)
         {
-            T[] array = GetSource().ToArray();
-            var comparer = GetComparer();
-            Sort(array, 0, array.Length - 1, comparer);
+            Sort(array, 0, array.Count() - 1, comparer);
             return array;
         }
 
-        private void Sort(T[] array, int left, int right, IComparer<T> comparer)
+        private void Sort(IEnumerable<T> arrayEnum, int left, int right, IComparer<T> comparer)
         {
             int i = left;
             int j = right;
+            T[] array = arrayEnum.ToArray();
             T pivot = array[left + (right - left) / 2];
+
             while (i <= j)
             {
                 while (comparer.Compare(array[i], pivot) == -1)
@@ -42,14 +39,14 @@ namespace GenericSorting
                     i++;
                     j--;
                 }
-                if (left < j)
-                {
-                    Sort(array, left, j, comparer);
-                }
-                if (i < right)
-                {
-                    Sort(array, i, right, comparer);
-                }
+            }
+            if (left < j)
+            {
+                Sort(array, left, j, comparer);
+            }
+            if (i < right)
+            {
+                Sort(array, i, right, comparer);
             }
         }
     }

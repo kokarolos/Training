@@ -3,29 +3,25 @@ using System.Linq;
 
 namespace GenericSorting
 {
-    public abstract class BubbleSort<T> 
+    public class BubbleSort<T> : ISortingMethod<T>
     {
-       protected abstract IComparer<T> GetComparer();
-       protected abstract IEnumerable<T> GetSource();
-
-        public IEnumerable<T> Sort()
+        public IEnumerable<T> Sort(IEnumerable<T> array, IComparer<T> comparer)
         {
-            T[] emps = GetSource().ToArray();
+            T[] genericArray = array.ToArray();
             T temp;
-            for (int j = 0; j <= emps.Length - 2; j++)
+            for (int j = 0; j <= genericArray.Length - 2; j++)
             {
-                for (int i = 0; i <= emps.Length - 2; i++)
+                for (int i = 0; i <= genericArray.Length - 2; i++)
                 {
-                    IComparer<T> comparer = GetComparer();
-                    if (comparer.Compare(emps[i], emps[i + 1]) == 1)
+                    if (comparer.Compare(genericArray[i], genericArray[i + 1]) == 1)
                     {
-                        temp = emps[i + 1];
-                        emps[i + 1] = emps[i];
-                        emps[i] = temp;
+                        temp = genericArray[i + 1];
+                        genericArray[i + 1] = genericArray[i];
+                        genericArray[i] = temp;
                     }
                 }
             }
-            return emps;
+            return genericArray;
         }
     }
 }
