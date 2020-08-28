@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BubbleSort.cs" />
+    <Compile Include="ComparerFactory.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeCompareWithFirstName.cs" />
+    <Compile Include="EmployeeCompareWithID.cs" />
+    <Compile Include="EmployeeCompareWithLastName.cs" />
+    <Compile Include="EmployeesBSort.cs" />
+    <Compile Include="ISortingMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickShort.cs" />
+    <Compile Include="QuickSortFirstName.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
