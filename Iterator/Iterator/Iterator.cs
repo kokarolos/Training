@@ -4,5 +4,6 @@
     {
         bool HasNext();
         object Next();
+        void Remove();
     }
 }

@@ -19,7 +19,7 @@ namespace Iterator
             Console.WriteLine("Menu\n----------\nBreakfast");
             PrintMenu(pancakeIterator);
             Console.WriteLine("\nLunch");
-            PrintMenu(pancakeIterator);
+            PrintMenu(dinerIterator);
         }
         private void PrintMenu(Iterator iterator)
         {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Iterator
 {
@@ -14,7 +15,7 @@ namespace Iterator
 
         public bool HasNext()
         {
-            return _position <= _menuItems.Count && !(_menuItems[_position] is null);
+            return _position <= _menuItems.Count -1 && _menuItems[_position] != null;
         }
 
         public object Next()
@@ -22,6 +23,22 @@ namespace Iterator
             var menuItem = _menuItems[_position];
             _position++;
             return menuItem;
+        }
+
+        public void Remove()
+        {
+            if (_position <= 0)
+            {
+                throw new InvalidOperationException("You cant remove an item until you've done at least one next()");
+            }
+            if (_menuItems[_position] != null)
+            {
+                for (int i = _position - 1; i < _menuItems.Count - 1; i++)
+                {
+                    _menuItems[i] = _menuItems[i + 1];
+                }
+                _menuItems[_menuItems.Count - 1] = null;
+            }
         }
     }
 }
