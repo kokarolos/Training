@@ -1,26 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Iterator
 {
     public class Waitress
     {
-        private IMenu _pancakeHouseMenu;
-        private IMenu _dinerMenu;
+        private IEnumerable<IMenu> _menus; 
 
-        public Waitress(IMenu pancakeHouseMenu, IMenu dinerMenu)
+        public Waitress(IEnumerable<IMenu> menus)
         {
-            _pancakeHouseMenu = pancakeHouseMenu;
-            _dinerMenu = dinerMenu;
+            _menus = menus;
         }
+
         public void PrintMenu()
         {
-            Iterator pancakeIterator = _pancakeHouseMenu.CreateIterator();
-            Iterator dinerIterator = _dinerMenu.CreateIterator();
-            Console.WriteLine("Menu\n----------\nBreakfast");
-            PrintMenu(pancakeIterator);
-            Console.WriteLine("\nLunch");
-            PrintMenu(dinerIterator);
+          // Iterator menuIterator = _menus.GetEnumerator();
+          // Iterator pancakeIterator = _pancakeHouseMenu.CreateIterator();
+          // Iterator dinerIterator = _dinerMenu.CreateIterator();
+          // Iterator cafeIterator = _cafeMenu.CreateIterator();
+          // Console.WriteLine("Menu\n----------\nBreakfast");
+          // PrintMenu(pancakeIterator);
+          // Console.WriteLine("\nLunch");
+          // PrintMenu(dinerIterator);
+          // Console.WriteLine("\nDinner");
+          // PrintMenu(cafeIterator);
         }
+
         private void PrintMenu(Iterator iterator)
         {
             while (iterator.HasNext())
