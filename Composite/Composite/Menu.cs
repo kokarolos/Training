@@ -30,10 +30,10 @@ namespace Composite
             Console.Write($"{_name}");
             Console.WriteLine($", {_description}");
             Console.WriteLine($"---------------------------");
-            Iterator iterator = _menuComponents.Iterator();
-            while (iterator.HasNext())
+            var iterator = _menuComponents.GetEnumerator();
+            while (iterator.MoveNext())
             {
-                var menuComponent = iterator.Next() as MenuComponent;
+                var menuComponent = iterator.Current as MenuComponent;
                 menuComponent.Print();
             }
 

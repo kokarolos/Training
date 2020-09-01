@@ -2,11 +2,11 @@
 
 namespace Composite
 {
-    public class DinerMenu : IMenu
+    public class DinerMenu : MenuComponent
     {
         private static int _maxItems = 6;
         private int _numberOfItems = 0;
-        MenuItem[] _menuItems;
+        private MenuItem[] _menuItems;
 
         public DinerMenu()
         {
@@ -29,9 +29,30 @@ namespace Composite
                 _numberOfItems++;
             }
         }
+
+        public override void Add(MenuComponent menuComponent)
+        {
+            throw new NotImplementedException();
+        }
+
         public Iterator CreateIterator()
         {
             return new DinerMenuIterator(_menuItems);
+        }
+
+        public override MenuComponent GetChild(int i)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Print()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Remove(MenuComponent menuComponent)
+        {
+            throw new NotImplementedException();
         }
     }
 }

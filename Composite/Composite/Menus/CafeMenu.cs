@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Composite
 {
-    public class CafeMenu : IMenu
+    public class CafeMenu : MenuComponent
     {
         private List<MenuItem> _menuItems = new List<MenuItem>();
         public CafeMenu()
@@ -16,9 +17,30 @@ namespace Composite
             var item = new MenuItem(name, description, isVegetarian, price);
             _menuItems.Add(item);
         }
+
+        public override void Add(MenuComponent menuComponent)
+        {
+            throw new NotImplementedException();
+        }
+
         public Iterator CreateIterator()
         {
-            return 
+            return new CafeMenuIterator(_menuItems); 
+        }
+
+        public override MenuComponent GetChild(int i)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Print()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Remove(MenuComponent menuComponent)
+        {
+            throw new NotImplementedException();
         }
     }
 }
