@@ -19,18 +19,14 @@ namespace StatePattern
             soldState = new SoldState(this);
             hasQuarterState = new HasQuarterState(this);
             noQuarterState = new NoQuartersState(this);
+            state = new SoldOutState(this);
+            WinnerState = new WinnerState(this);
             this.count = numberGumBalls;
             if (numberGumBalls>0)
-            {
                 state = noQuarterState;
-            }
-            else
-            {
-                state = soldOutState;
-            }
+            
         }
-
-
+       
         public void ReleaseBall()
         {
             Console.WriteLine("A GumBall comes rolling out the slot");
@@ -70,18 +66,20 @@ namespace StatePattern
 
         public State GetsoldOutState()
         {
-            return new SoldOutState(this);
+            return soldOutState;
         }
 
         public State GetSoldState()
         {
-            return new SoldState(this);
+            return soldState;
         }
-
         public State GethasQuarterState()
         {
-            return new HasQuarterState(this);
-
+            return hasQuarterState;
+        }
+        public State GetWinnerState()
+        {
+            return WinnerState;
         }
 
         public int GetCount()
