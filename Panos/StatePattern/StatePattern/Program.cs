@@ -9,36 +9,21 @@ namespace StatePattern
     {
         static void Main(string[] args)
         {
-            GumballMachine gumballMachine = new GumballMachine(40);
-
+            GumballMachine gumballMachine = new GumballMachine(2);
 
             gumballMachine.dispense();
             gumballMachine.InsertQuarter();
             gumballMachine.dispense();
+            gumballMachine.InsertQuarter();
+            gumballMachine.dispense();
+            gumballMachine.InsertQuarter();
+            gumballMachine.dispense();
             gumballMachine.TurnCrank();
-        }
-    }
-
-    public class WinnerState : State
-    {
-        public void Dispense()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void EjectQuarter()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InsertQuarter()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void TurnCrank()
-        {
-            throw new System.NotImplementedException();
+            gumballMachine.dispense();
+            gumballMachine.TurnCrank();
+           
+            //gumballMachine.dispense();
+            //gumballMachine.dispense();
         }
     }
 }
