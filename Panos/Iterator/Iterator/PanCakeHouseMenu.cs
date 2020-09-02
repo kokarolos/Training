@@ -2,7 +2,7 @@
 
 namespace Iterator
 {
-    public class PanCakeHouseMenu 
+    public class PanCakeHouseMenu :Menu
     {
         List<MenuItem> menuItems;
 
@@ -19,7 +19,7 @@ namespace Iterator
             MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
             menuItems.Add(menuItem);
         }
-
+        
         public Iterator CreateIterator()
         {
             return new PancakeHouseIterator(menuItems);

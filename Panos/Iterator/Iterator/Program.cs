@@ -9,13 +9,9 @@ namespace Iterator
     {
         static void Main(string[] args)
         {
-            DinerMenu dinermenu = new DinerMenu();
-            PanCakeHouseMenu panCakeHouseMenu = new PanCakeHouseMenu();
-            Waitor waitor = new Waitor(panCakeHouseMenu,dinermenu);
-
+            List<Menu> menus = new List<Menu> { new DinerMenu(), new PanCakeHouseMenu(), new CafeMenu() };
+            Waitor waitor = new Waitor(menus);
             waitor.PrintMenu();
-
-           
         }
     }
 }
