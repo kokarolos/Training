@@ -44,10 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GumballMachina.cs" />
+    <Compile Include="NoQuarterState.cs" />
+    <Compile Include="States\SoldState.cs" />
+    <Compile Include="States\HasQuarterState.cs" />
     <Compile Include="IState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SoldOutState.cs" />
+    <Compile Include="States\SoldOutState.cs" />
+    <Compile Include="States\WinnerState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
