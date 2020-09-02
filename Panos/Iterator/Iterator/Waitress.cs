@@ -1,24 +1,27 @@
-﻿namespace Iterator
+﻿using System;
+using System.Collections.Generic;
+
+namespace Iterator
 {
     public class Waitor
     {
-        PanCakeHouseMenu PanCakeHouseMenu;
-        DinerMenu DinerMenu;
+        List<Menu> menus;
 
-        public Waitor(PanCakeHouseMenu panCakeHouseMenu, DinerMenu dinerMenu)
+        public Waitor(List<Menu> menus)
         {
-            PanCakeHouseMenu = panCakeHouseMenu;
-            DinerMenu = dinerMenu;
+            this.menus = menus;
         }
 
         public void PrintMenu()
         {
-            Iterator pancakeIterator = PanCakeHouseMenu.CreateIterator();
-            Iterator dinnerIterator = DinerMenu.CreateIterator();
-            System.Console.WriteLine($"BREAKFAST\n\n\n\n");
-            PrintMenu(pancakeIterator);
-            System.Console.WriteLine("DINNER");
-            PrintMenu(dinnerIterator);
+            // HAVE TO FIX THAT IMPLEMENTATION
+
+            ////Iterator menuIterator = menus
+            //while (menuIterator.HasNext())
+            //{
+            //    Menu menu = (Menu)menuIterator.Next();
+            //    PrintMenu(menu.CreateIterator());
+            //}
         }
 
         private void PrintMenu(Iterator iterator)
@@ -26,9 +29,9 @@
             while (iterator.HasNext())
             {
                 MenuItem menuItem = (MenuItem)iterator.Next();
-                System.Console.WriteLine(menuItem.GetName() + ", ");
-                System.Console.WriteLine(menuItem.GetPrice() + " -- ");
-                System.Console.WriteLine(menuItem.GetDescription());
+                Console.WriteLine(menuItem.GetName() + ", ");
+                Console.WriteLine(menuItem.GetPrice() + " -- ");
+                Console.WriteLine(menuItem.GetDescription());
             }
         }
     }
