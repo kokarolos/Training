@@ -11,5 +11,6 @@
         public abstract void Remove(MenuComponent menuComponent);
         public abstract MenuComponent GetChild(int i);
         public abstract void Print();
+        public abstract Iterator CreateIterator();
     }
 }

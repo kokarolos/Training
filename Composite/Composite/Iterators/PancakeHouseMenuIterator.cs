@@ -4,9 +4,9 @@ namespace Composite
 {
     public class PancakeHouseMenuIterator : Iterator
     {
-        private List<MenuItem> _menuItems;
+        private List<MenuComponent> _menuItems;
         private int _index = 0;
-        public PancakeHouseMenuIterator(List<MenuItem> menuItems)
+        public PancakeHouseMenuIterator(List<MenuComponent> menuItems)
         {
             _menuItems = menuItems;
         }

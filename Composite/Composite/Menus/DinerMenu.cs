@@ -35,7 +35,7 @@ namespace Composite
             throw new NotImplementedException();
         }
 
-        public Iterator CreateIterator()
+        public override Iterator CreateIterator()
         {
             return new DinerMenuIterator(_menuItems);
         }

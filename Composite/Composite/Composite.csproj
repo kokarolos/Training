@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompositeGraphic.cs" />
+    <Compile Include="Curves.cs" />
+    <Compile Include="Dot.cs" />
+    <Compile Include="Ellipse.cs" />
+    <Compile Include="Graphic.cs" />
     <Compile Include="Menus\CafeMenu.cs" />
     <Compile Include="Iterators\CafeMenuIterator.cs" />
     <Compile Include="Menus\DinerMenu.cs" />
@@ -54,6 +59,7 @@
     <Compile Include="MenuItem.cs" />
     <Compile Include="Menus\PancakeHouseMenu.cs" />
     <Compile Include="Iterators\PancakeHouseMenuIterator.cs" />
+    <Compile Include="Painter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Waitress.cs" />

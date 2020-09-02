@@ -23,9 +23,9 @@ namespace Composite
             throw new NotImplementedException();
         }
 
-        public Iterator CreateIterator()
+        public override Iterator CreateIterator()
         {
-            return new CafeMenuIterator(_menuItems); 
+            return new CafeMenuIterator(_menuItems);
         }
 
         public override MenuComponent GetChild(int i)

@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace Composite
 {
-    public class PancakeHouseMenu : MenuComponent
+    public class PancakeHouseMenu : MenuComponent , IEnumerable<MenuComponent>
     {
-        private int _numberOfItems = 0;
         private List<MenuComponent> _menuItems;
 
         public PancakeHouseMenu()
@@ -38,6 +38,24 @@ namespace Composite
         }
 
         public override void Remove(MenuComponent menuComponent)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IEnumerator<MenuComponent> GetEnumerator()
+        {
+            foreach (var item in _menuItems)
+            {
+                yield return item;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        public override Iterator CreateIterator()
         {
             throw new System.NotImplementedException();
         }
