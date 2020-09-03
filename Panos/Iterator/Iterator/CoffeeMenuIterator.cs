@@ -1,21 +1,21 @@
-﻿using System.Collections.Generic;
-using System;
-
+﻿using System;
+using System.Collections;
 namespace Iterator
 {
-    public class PancakeHouseIterator : Iterator
+    public class CoffeeMenuIterator : Iterator
     {
-        List<MenuItem> items;
-        private int position = 0;
+        MenuItem[] items;
+        int position = 0;
 
-        public PancakeHouseIterator(List<MenuItem>items)
+        public CoffeeMenuIterator(MenuItem[] items)
         {
             this.items = items;
         }
 
+
         public bool HasNext()
         {
-            if (position >= items.Count || items[position] == null)
+            if (position >= items.Length || items[position] == null)
             {
                 return false;
             }
@@ -27,8 +27,8 @@ namespace Iterator
 
         public object Next()
         {
-            var menuItem = items[position];
-            position++;
+            MenuItem menuItem = items[position];
+            position = position + 1;
             return menuItem;
         }
 
@@ -40,12 +40,18 @@ namespace Iterator
             }
             if (items[position - 1] != null)
             {
-                for (int i = position - 1; i < (items.Count - 1); i++)
+                for (int i = position - 1; i < (items.Length - 1); i++)
                 {
                     items[i] = items[i + 1];
                 }
-                items[items.Count - 1] = null;
+                items[items.Length - 1] = null;
             }
         }
     }
+
+
+
+
+
+
 }

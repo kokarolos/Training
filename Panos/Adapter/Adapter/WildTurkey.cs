@@ -14,6 +14,4 @@ namespace Adapter
             Console.WriteLine("Gobble Gobble");
         }
     }
-
-
 }

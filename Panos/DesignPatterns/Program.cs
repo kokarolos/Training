@@ -13,17 +13,9 @@ namespace DesignPatterns
             Duck mallard = new MalardDuck(new FlyNoWay(), new MuteQuack());
             Duck rubberDuck = new RubberDuck(new FlyNoWay(), new MuteQuack());
 
-
-
-
-            // Legit???
             Duck redhead = new RedHeadDuck(FlyBehaviorFactory.CreateFlyBehavior(FlyOptions.FlyNoWay),
                                            QuackBehaviorFactory.CreateQuackBehavior(QuackOptions.MuteQuack));
-                                
-
-
             redhead.PerformFly();
-
         }
 
     }
