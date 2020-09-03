@@ -11,8 +11,9 @@ namespace State
         private IState _soldState;
         private IState _winnerState;
         private int _count = 0;
+        private string _location;
 
-        public GumballMachina(int numberOfGumballs)
+        public GumballMachina(int numberOfGumballs,string location)
         {
             _state = new SoldOutState(this);
             _soldOutState = new SoldOutState(this);
@@ -21,7 +22,9 @@ namespace State
             _soldState = new SoldState(this);
             _winnerState = new WinnerState(this);
 
+            _location = location;
             if (numberOfGumballs > 0)
+                _count = numberOfGumballs;
                 _state = _noQuarterState;
         }
 
@@ -67,25 +70,35 @@ namespace State
         {
             return _noQuarterState;
         }
+
         public IState GetSoldState()
         {
             return _soldState;
         }
+
         public IState GetSoldOutState()
         {
             return _soldOutState;
         }
+
         public IState GetHasQuarterState()
         {
             return _hasQuarterState;
         }
+
         public int GetCount()
         {
             return _count;
         }
+
         public IState GetWinnerState()
         {
             return _winnerState;
+        }
+
+        public string GetLocation()
+        {
+            return _location;
         }
     }
 }

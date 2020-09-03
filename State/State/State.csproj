@@ -44,7 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GumballMachina.cs" />
-    <Compile Include="NoQuarterState.cs" />
+    <Compile Include="GumballMonitor.cs" />
+    <Compile Include="States\NoQuarterState.cs" />
     <Compile Include="States\SoldState.cs" />
     <Compile Include="States\HasQuarterState.cs" />
     <Compile Include="IState.cs" />

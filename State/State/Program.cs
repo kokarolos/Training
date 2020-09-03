@@ -6,7 +6,6 @@ namespace State
     {
         static void Main(string[] args)
         {
-            var machina = new GumballMachina(5);
             //Load it up with five gumballs total
             // Console.WriteLine(machina); //State of machine
             //
@@ -49,6 +48,11 @@ namespace State
             // machina.TurnCrank();
             // machina.InsertQuarter();
             // machina.TurnCrank();
+
+
+            var machina = new GumballMachina(5, "Bali");
+            var monitor = new GumballMonitor(machina);
+            monitor.Report();
         }
     }
 }
