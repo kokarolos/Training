@@ -55,4 +55,9 @@ namespace State
             monitor.Report();
         }
     }
+
+    public interface IService 
+    {
+
+    }
 }
