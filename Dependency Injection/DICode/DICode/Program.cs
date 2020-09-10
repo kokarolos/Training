@@ -1,9 +1,4 @@
-﻿using System;
-using System.Runtime.Remoting.Messaging;
-using System.Configuration;
-using System.Threading;
-using Xunit;
-using Moq;
+﻿using System.Collections.Generic;
 
 namespace DICode
 {
@@ -11,69 +6,52 @@ namespace DICode
     {
         static void Main(string[] args)
         {
-            // var t = ConfigurationManager.AppSettings["messageWriter"];
-            // var typeName = typeof(ConsoleMessageWriter);
-            // var type = Type.GetType(typeName.ToString(), true);
-            // IMessageWriter writer = (IMessageWriter)Activator.CreateInstance(type);
-            IMessageWriter writer = new SecureMessageWriter(new ConsoleMessageWriter());
-            writer.Write("sadas");
-            var salutation = new Salutation(writer);
-            salutation.Exclaim();
-            //salutation.ExclaimWillWriteCorrectMessageToMessageWriter();
-        }
-    }
-    public interface IMessageWriter
-    {
-        void Write(string content);
-    }
-
-    public class ConsoleMessageWriter : IMessageWriter
-    {
-        public void Write(string content)
-        {
-            Console.WriteLine(content);
-        }
-    }
-    public class SecureMessageWriter : IMessageWriter
-    {
-        private readonly IMessageWriter _messageWriter;
-
-        public SecureMessageWriter(IMessageWriter messageWriter)
-        {
-            if (messageWriter == null)
-                throw new ArgumentNullException("writer is null");
-            _messageWriter = messageWriter;
-        }
-
-        public void Write(string content)
-        {
-            if (Thread.CurrentPrincipal.Identity.IsAuthenticated)
-            {
-                _messageWriter.Write(content);
-            }
+          
         }
     }
 
-    public class Salutation
+    public class Basket
     {
-        private IMessageWriter _messageWriter;
-        public Salutation(IMessageWriter messageWriter)
+        public string Owner { get; set; }
+        public List<Extent> EvaluatedProducts { get; set; }
+
+    }
+
+    public class Extent
+    {
+        string Product { get; set; }
+        public int Quantity { get; set; }
+        public decimal Total { get; set; }
+    }
+
+    public abstract class BasketDiscountPolicy
+    {
+        public abstract void Apply();
+    }
+
+    public class BasketService : BasketRepository
+    {
+
+        public override void AddToBasket()
         {
-            _messageWriter = messageWriter ?? throw new ArgumentException("Writer");
+            throw new System.NotImplementedException();
         }
 
-        public void Exclaim()
+        public override void Empty()
         {
-            _messageWriter.Write("Hello DI!");
+            throw new System.NotImplementedException();
         }
 
-        [Fact]
-        public void ExclaimWillWriteCorrectMessageToMessageWriter()
+        public override void GetBasketFor()
         {
-            var writerMock = new Mock<IMessageWriter>();
-            var sut = new Salutation(writerMock.Object); //Dynamically created instace of IMessageWriter
-            sut.Exclaim();
-            writerMock.Verify(w => w.Write("Hello DI"));
+            throw new System.NotImplementedException();
         }
+    }
+
+    public abstract class BasketRepository
+    {
+        public abstract void AddToBasket();
+        public abstract void Empty();
+        public abstract void GetBasketFor();
     }
 }
