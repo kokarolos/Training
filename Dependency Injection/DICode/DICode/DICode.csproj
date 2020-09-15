@@ -62,12 +62,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleMessageWriter.cs" />
-    <Compile Include="IMessageWriter.cs" />
+    <Compile Include="Basket.cs" />
+    <Compile Include="BasketController.cs" />
+    <Compile Include="BasketDiscountPolicy.cs" />
+    <Compile Include="BasketRepository.cs" />
+    <Compile Include="BasketService.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="CurrencyProfileService.cs" />
+    <Compile Include="CurrencyProvider.cs" />
+    <Compile Include="DefaultProductDiscountPolicy.cs" />
+    <Compile Include="DiscountRepository.cs" />
+    <Compile Include="Extent.cs" />
+    <Compile Include="IBasketService.cs" />
+    <Compile Include="MessageWriter\ConsoleMessageWriter.cs" />
+    <Compile Include="MessageWriter\IMessageWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Salutation.cs" />
-    <Compile Include="SecureMessageWriter.cs" />
+    <Compile Include="MessageWriter\Salutation.cs" />
+    <Compile Include="MessageWriter\SecureMessageWriter.cs" />
+    <Compile Include="RepositoryBasketDiscountPolicy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
